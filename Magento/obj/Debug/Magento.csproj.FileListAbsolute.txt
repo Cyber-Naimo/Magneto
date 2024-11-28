@@ -7,6 +7,7 @@ C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Microsoft.TestPlatform.A
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Magento.dll.config
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Magento.dll
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Magento.pdb
+C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Mailosaur.dll
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Microsoft.ApplicationInsights.dll
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Microsoft.Testing.Extensions.Telemetry.dll
@@ -19,6 +20,7 @@ C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Microsoft.TestPlatform.P
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\System.Buffers.dll
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\System.Collections.Immutable.dll
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\System.Diagnostics.DiagnosticSource.dll
@@ -34,6 +36,7 @@ C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\System.ValueTuple.dll
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\WebDriver.dll
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\WebDriver.Support.dll
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Mailosaur.xml
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Microsoft.ApplicationInsights.pdb
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Microsoft.ApplicationInsights.xml
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
@@ -44,6 +47,7 @@ C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Microsoft.Testing.Platfo
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Microsoft.Testing.Platform.MSBuild.xml
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\System.Buffers.xml
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\System.Collections.Immutable.xml
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\System.Diagnostics.DiagnosticSource.xml

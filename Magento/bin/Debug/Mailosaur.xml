@@ -1,0 +1,1592 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Mailosaur</name>
+    </assembly>
+    <members>
+        <member name="M:Mailosaur.MailosaurClient.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the MailosaurClient class.
+            </summary>
+            <param name='apiKey'>
+            Your Mailosaur API key.
+            </param>
+        </member>
+        <member name="M:Mailosaur.MailosaurClient.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the MailosaurClient class.
+            </summary>
+            <param name='apiKey'>
+            Your Mailosaur API key.
+            </param>
+            <param name='baseUrl'>
+            Optional. Override the base URL for the mailosaur server.
+            </param>
+        </member>
+        <member name="M:Mailosaur.MailosaurClient.Dispose">
+            <summary>
+            Disposes relevant resources
+            </summary>
+        </member>
+        <member name="M:Mailosaur.MailosaurExtensions.ReadToArray(System.IO.Stream)">
+            <summary>
+            Reads a stream into a byte array.
+            </summary>
+            <returns>The contents of the stream as a byte array.</returns>
+            <param name="stream">Stream.</param>
+        </member>
+        <member name="P:Mailosaur.Models.Device.Id">
+            <summary>
+            Unique identifier for the device.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.Device.Name">
+            <summary>
+            The name of the device.
+            </summary>
+        </member>
+        <member name="M:Mailosaur.Models.DeviceCreateOptions.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the ServerCreateOptions class.
+            </summary>
+            <param name="name">A name used to identify the device.</param>
+            <param name="sharedSecret">The base32-encoded shared secret for this device.</param>
+        </member>
+        <member name="P:Mailosaur.Models.DeviceCreateOptions.Name">
+            <summary>
+            A name used to identify the device.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.DeviceCreateOptions.SharedSecret">
+            <summary>
+            The base32-encoded shared secret for this device.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.DeviceListResult.Items">
+            <summary>
+            Gets or sets the individual devices forming the result.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.MailosaurError.Type">
+            <summary>
+            Gets or sets possible values include: 'None', 'ValidationError',
+            'AuthenticationError', 'PermissionDeniedError',
+            'ResourceNotFoundError'
+            </summary>
+        </member>
+        <member name="T:Mailosaur.Models.MailosaurException">
+            <summary>
+            Exception thrown for an invalid response with MailosaurError
+            information.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.Message.Id">
+            <summary>
+            Gets or sets unique identifier for the message.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.Message.Type">
+            <summary>
+            Gets or sets the type of message.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.Message.From">
+            <summary>
+            Gets or sets the sender of the message.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.Message.To">
+            <summary>
+            Gets or sets the message’s recipient.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.Message.Cc">
+            <summary>
+            Gets or sets carbon-copied recipients for email messages.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.Message.Bcc">
+            <summary>
+            Gets or sets blind carbon-copied recipients for email messages.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.Message.Received">
+            <summary>
+            Gets or sets the datetime that this message was received by
+            Mailosaur.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.Message.Subject">
+            <summary>
+            Gets or sets the message’s subject.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.Message.Html">
+            <summary>
+            Gets or sets message content that was sent in HTML format.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.Message.Text">
+            <summary>
+            Gets or sets message content that was sent in plain text format.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.Message.Attachments">
+            <summary>
+            Gets or sets an array of attachment metadata for any attached
+            files.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.Message.Metadata">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.Message.Server">
+            <summary>
+            Gets or sets identifier for the server in which the message is
+            located.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.MessageAddress.Name">
+            <summary>
+            Gets or sets display name, if one is specified.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.MessageAddress.Email">
+            <summary>
+            Gets or sets email address (applicable to email messages).
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.MessageAddress.Phone">
+            <summary>
+            Gets or sets phone number (applicable to SMS messages).
+            </summary>
+        </member>
+        <member name="M:Mailosaur.Models.MessageCreateOptions.#ctor">
+            <summary>
+            Initializes a new instance of the MessageCreateOptions class.
+            </summary>
+        </member>
+        <member name="M:Mailosaur.Models.MessageCreateOptions.#ctor(System.String,System.Boolean,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{Mailosaur.Models.Attachment})">
+            <summary>
+            Initializes a new instance of the MessageCreateOptions class.
+            </summary>
+            <param name="to">The email address to which the email will be sent.</param>
+            <param name="from">Partially overrides of the message's 'from' address. This **must** be an address ending 
+            with `YOUR_SERVER.mailosaur.net`, such as `my-emails @a1bcdef2.mailosaur.net`.</param>
+            <param name="send">If true, email will be sent upon creation.</param>
+            <param name="subject">The email subject line.</param>
+            <param name="text">The plain text body of the email. Note that only text or html can be supplied, not both.</param>
+            <param name="html">The HTML body of the email. Note that only text or html can be supplied, not both.</param>
+            <param name="att">The email subject line.</param>
+        </member>
+        <member name="P:Mailosaur.Models.MessageCreateOptions.To">
+            <summary>
+            The email address to which the email will be sent.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.MessageCreateOptions.From">
+            <summary>
+            Partially overrides of the message's 'from' address. This **must** be an address ending 
+            with `YOUR_SERVER.mailosaur.net`, such as `my-emails @a1bcdef2.mailosaur.net`.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.MessageCreateOptions.Send">
+            <summary>
+            If true, email will be sent upon creation.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.MessageCreateOptions.Subject">
+            <summary>
+            The email subject line.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.MessageCreateOptions.Text">
+            <summary>
+            The plain text body of the email. Note that only text or html can be supplied, not both.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.MessageCreateOptions.Html">
+            <summary>
+            The HTML body of the email. Note that only text or html can be supplied, not both.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.MessageCreateOptions.Attachments">
+            <summary>
+            Any message attachments.
+            </summary>
+        </member>
+        <member name="M:Mailosaur.Models.MessageForwardOptions.#ctor">
+            <summary>
+            Initializes a new instance of the MessageForwardOptions class.
+            </summary>
+        </member>
+        <member name="M:Mailosaur.Models.MessageForwardOptions.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the MessageForwardOptions class.
+            </summary>
+            <param name="to">The email address to which the email will be sent.</param>
+            <param name="text">Any additional plain text content to forward the email with. Note that only text or html can be supplied, not both.</param>
+            <param name="html">Any additional HTML content to forward the email with. Note that only html or text can be supplied, not both.</param>
+        </member>
+        <member name="P:Mailosaur.Models.MessageForwardOptions.To">
+            <summary>
+            The email address to which the email will be sent.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.MessageForwardOptions.Text">
+            <summary>
+            Any additional plain text content to forward the email with. Note that only text or html can be supplied, not both.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.MessageForwardOptions.Html">
+            <summary>
+            Any additional HTML content to forward the email with. Note that only html or text can be supplied, not both.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.MessageHeader.Field">
+            <summary>
+            Gets or sets header key.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.MessageHeader.Value">
+            <summary>
+            Gets or sets header value.
+            </summary>
+        </member>
+        <member name="T:Mailosaur.Models.MessageListResult">
+            <summary>
+            The result of a message listing request.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.MessageListResult.Items">
+            <summary>
+            Gets or sets the individual summaries of each message forming the
+            result. Summaries are returned sorted by received date, with the
+            most recently-received messages appearing first.
+            </summary>
+        </member>
+        <member name="T:Mailosaur.Models.MessageListResultWithHeaders">
+            <summary>
+            Used internally to delay based on HTTP headers.
+            </summary>
+        </member>
+        <member name="M:Mailosaur.Models.MessageReplyOptions.#ctor">
+            <summary>
+            Initializes a new instance of the MessageReplyOptions class.
+            </summary>
+        </member>
+        <member name="M:Mailosaur.Models.MessageReplyOptions.#ctor(System.String,System.String,System.Collections.Generic.IEnumerable{Mailosaur.Models.Attachment})">
+            <summary>
+            Initializes a new instance of the MessageReplyOptions class.
+            </summary>
+            <param name="text">Any additional plain text content to include in the reply. Note that only text or html can be supplied, not both.</param>
+            <param name="html">Any additional HTML content to include in the reply. Note that only html or text can be supplied, not both.</param>
+        </member>
+        <member name="P:Mailosaur.Models.MessageReplyOptions.Text">
+            <summary>
+            Any additional plain text content to include in the reply. Note that only text or html can be supplied, not both.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.MessageReplyOptions.Html">
+            <summary>
+            Any additional HTML content to include in the reply. Note that only html or text can be supplied, not both.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.MessageReplyOptions.Attachments">
+            <summary>
+            Any message attachments.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.MessageSummary.Id">
+            <summary>
+            Gets or sets unique identifier for the message.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.MessageSummary.Type">
+            <summary>
+            Gets or sets the type of message.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.MessageSummary.Server">
+            <summary>
+            Gets or sets identifier for the server in which the message is
+            located.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.MessageSummary.From">
+            <summary>
+            Gets or sets the sender of the message.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.MessageSummary.To">
+            <summary>
+            Gets or sets the message’s recipient.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.MessageSummary.Cc">
+            <summary>
+            Gets or sets carbon-copied recipients for email messages.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.MessageSummary.Bcc">
+            <summary>
+            Gets or sets blind carbon-copied recipients for email messages.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.MessageSummary.Received">
+            <summary>
+            Gets or sets the datetime that this message was received by
+            Mailosaur.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.MessageSummary.Subject">
+            <summary>
+            Gets or sets the message’s subject.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.MessageSummary.Summary">
+            <summary>
+            Summary snippet taken from message body
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.MessageSummary.Attachments">
+            <summary>
+            Number of message attachments 
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.Metadata.Headers">
+            <summary>
+            Gets or sets email headers.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.Metadata.Ehlo">
+            <summary>
+            TBC
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.Metadata.MailFrom">
+            <summary>
+            TBC
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.Metadata.RcptTo">
+            <summary>
+            Gets or sets the rcpt value of the message.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.OtpResult.Code">
+            <summary>
+            The current one-time password.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.OtpResult.Expires">
+            <summary>
+            The expiry date/time of the current one-time password.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.Preview.Id">
+            <summary>
+            The unique identifier for the email preview.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.Preview.EmailClient">
+            <summary>
+            The email client the preview was generated with.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.Preview.DisableImages">
+            <summary>
+            Whether images were disabled in the preview.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.PreviewEmailClient.Id">
+            <summary>
+            The unique identifier for the email preview.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.PreviewEmailClient.Name">
+            <summary>
+            The display name of the email client.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.PreviewEmailClient.PlatformGroup">
+            <summary>
+            Whether the platform is desktop, mobile, or web-based.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.PreviewEmailClient.PlatformType">
+            <summary>
+            The type of platform on which the email client is running.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.PreviewEmailClient.PlatformVersion">
+            <summary>
+            The platform version number.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.PreviewEmailClient.CanDisableImages">
+            <summary>
+            Whether images can be disabled when generating previews.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.PreviewEmailClient.Status">
+            <summary>
+            The current status of the email client.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.PreviewEmailClientListResult.Items">
+            <summary>
+            A list of available email clients with which to generate email previews.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.PreviewListResult.Items">
+            <summary>
+            A list of requested email previews.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.PreviewRequest.EmailClient">
+            <summary>
+            Gets or sets the email client you wish to generate a preview for.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.PreviewRequest.DisableImages">
+            <summary>
+            Gets or sets whether images will be disabled (only if supported by the client).
+            </summary>
+        </member>
+        <member name="M:Mailosaur.Models.PreviewRequestOptions.#ctor(System.Collections.Generic.IEnumerable{Mailosaur.Models.PreviewRequest})">
+            <summary>
+            Sets the list of email preview requests.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.PreviewRequestOptions.Previews">
+            <summary>
+            The list of email preview requests.
+            </summary>
+        </member>
+        <member name="M:Mailosaur.Models.SearchCriteria.#ctor(System.String,System.String,System.String,System.String,Mailosaur.Models.SearchMatchOperator)">
+            <summary>
+            Initializes a new instance of the SearchCriteria class.
+            </summary>
+            <param name="sentFrom">The full email address from which the target
+            email was sent.</param>
+            <param name="sentTo">The full email address to which the target
+            email was sent.</param>
+            <param name="subject">The value to seek within the target email's
+            subject line.</param>
+            <param name="body">The value to seek within the target email's HTML
+            or text body.</param>
+            <param name="match">If set to ALL (default), then only results that match all 
+            specified criteria will be returned. If set to ANY, results that match any of the
+            specified criteria will be returned.</param>
+        </member>
+        <member name="P:Mailosaur.Models.SearchCriteria.SentFrom">
+            <summary>
+            Gets or sets the full email address from which the target email was
+            sent.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.SearchCriteria.SentTo">
+            <summary>
+            Gets or sets the full email address to which the target email was
+            sent.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.SearchCriteria.Subject">
+            <summary>
+            Gets or sets the value to seek within the target email's subject
+            line.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.SearchCriteria.Body">
+            <summary>
+            Gets or sets the value to seek within the target email's HTML or
+            text body.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.SearchCriteria.Match">
+            <summary>
+            If set to ALL (default), then only results that match all 
+            specified criteria will be returned. If set to ANY, results that match any of the
+            specified criteria will be returned.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.Server.Id">
+            <summary>
+            Gets or sets unique identifier for the server. Used as username for
+            SMTP/POP3 authentication.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.Server.Name">
+            <summary>
+            Gets or sets a name used to identify the server.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.Server.Users">
+            <summary>
+            Gets or sets users (excluding administrators) who have access to
+            the server.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.Server.Messages">
+            <summary>
+            Gets or sets the number of messages currently in the server.
+            </summary>
+        </member>
+        <member name="M:Mailosaur.Models.ServerCreateOptions.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the ServerCreateOptions class.
+            </summary>
+            <param name="name">A name used to identify the server.</param>
+        </member>
+        <member name="P:Mailosaur.Models.ServerCreateOptions.Name">
+            <summary>
+            Gets or sets a name used to identify the server.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.ServerListResult.Items">
+            <summary>
+            Gets or sets the individual servers forming the result. Servers are
+            returned sorted by creation date, with the most recently-created
+            server appearing first.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.UsageAccountLimit.Limit">
+            <summary>
+            The limit
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.UsageAccountLimit.Current">
+            <summary>
+            The current value
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.UsageTransaction.Timestamp">
+            <summary>
+            Gets or sets the datetime that this transaction occurred.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.UsageTransaction.Email">
+            <summary>
+            The count of email transactions.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.UsageTransaction.Sms">
+            <summary>
+            The count of SMS transactions.
+            </summary>
+        </member>
+        <member name="P:Mailosaur.Models.UsageTransactionListResult.Items">
+            <summary>
+            Gets or sets the individual transactions forming the result.
+            </summary>
+        </member>
+        <member name="M:Mailosaur.Operations.Analysis.#ctor(System.Net.Http.HttpClient)">
+            <summary>
+            Initializes a new instance of the Analysis class.
+            </summary>
+            <param name='client'>
+            Reference to the HttpClient.
+            </param>
+        </member>
+        <member name="M:Mailosaur.Operations.Analysis.Spam(System.String)">
+            <summary>
+            Perform a spam test
+            </summary>
+            <remarks>
+            Perform spam testing on the specified email
+            </remarks>
+            <param name='email'>
+            The identifier of the email to be analyzed.
+            </param>
+        </member>
+        <member name="M:Mailosaur.Operations.Analysis.SpamAsync(System.String)">
+            <summary>
+            Perform a spam test
+            </summary>
+            <remarks>
+            Perform spam testing on the specified email
+            </remarks>
+            <param name='email'>
+            The identifier of the email to be analyzed.
+            </param>
+        </member>
+        <member name="M:Mailosaur.Operations.Analysis.Deliverability(System.String)">
+            <summary>
+            Perform a deliverability test 
+            </summary>
+            <remarks>
+            Perform deliverability testing on the specified email
+            </remarks>
+            <param name='email'>
+            The identifier of the email to be analyzed.
+            </param>
+        </member>
+        <member name="M:Mailosaur.Operations.Analysis.DeliverabilityAsync(System.String)">
+            <summary>
+            Perform a deliverability test
+            </summary>
+            <remarks>
+            Perform deliverability testing on the specified email
+            </remarks>
+            <param name='email'>
+            The identifier of the email to be analyzed.
+            </param>
+        </member>
+        <member name="T:Mailosaur.Operations.Devices">
+            <summary>
+            Devices operations.
+            </summary>
+        </member>
+        <member name="M:Mailosaur.Operations.Devices.#ctor(System.Net.Http.HttpClient)">
+            <summary>
+            Initializes a new instance of the Devices class.
+            </summary>
+            <param name='client'>
+            Reference to the HttpClient.
+            </param>
+        </member>
+        <member name="M:Mailosaur.Operations.Devices.List">
+            <summary>
+            List all devices
+            </summary>
+            <remarks>
+            Returns a list of your virtual security devices.
+            </remarks>
+            <exception cref="T:Mailosaur.Models.MailosaurException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Mailosaur.Operations.Devices.ListAsync">
+            <summary>
+            List all devices
+            </summary>
+            <remarks>
+            Returns a list of your virtual security devices.
+            </remarks>
+            <exception cref="T:Mailosaur.Models.MailosaurException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Mailosaur.Operations.Devices.Create(Mailosaur.Models.DeviceCreateOptions)">
+            <summary>
+            Create a device
+            </summary>
+            <remarks>
+            Creates a new virtual security device and returns it.
+            </remarks>
+            <param name='deviceCreateOptions'>
+            </param>
+            <exception cref="T:Mailosaur.Models.MailosaurException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Mailosaur.Operations.Devices.CreateAsync(Mailosaur.Models.DeviceCreateOptions)">
+            <summary>
+            Create a device
+            </summary>
+            <remarks>
+            Creates a new virtual security device and returns it.
+            </remarks>
+            <param name='deviceCreateOptions'>
+            </param>
+            <exception cref="T:Mailosaur.Models.MailosaurException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Mailosaur.Operations.Devices.Otp(System.String)">
+            <summary>
+            Retrieve the current one-time password.
+            </summary>
+            <remarks>
+            Retrieves the current one-time password for a saved device, or given base32-encoded shared secret.
+            </remarks>
+            <param name='query'>
+            Either the unique identifier of the device, or a base32-encoded shared secret.
+            </param>
+            <exception cref="T:Mailosaur.Models.MailosaurException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Mailosaur.Operations.Devices.OtpAsync(System.String)">
+            <summary>
+            Retrieve the current one-time password.
+            </summary>
+            <remarks>
+            Retrieves the current one-time password for a saved device, or given base32-encoded shared secret.
+            </remarks>
+            <param name='query'>
+            Either the unique identifier of the device, or a base32-encoded shared secret.
+            </param>
+            <exception cref="T:Mailosaur.Models.MailosaurException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Mailosaur.Operations.Devices.Delete(System.String)">
+            <summary>
+            Delete a device
+            </summary>
+            <remarks>
+            Permanently deletes a device. This operation cannot be undone.
+            </remarks>
+            <param name='id'>
+            The identifier of the device to be deleted.
+            </param>
+            <exception cref="T:Mailosaur.Models.MailosaurException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Mailosaur.Operations.Devices.DeleteAsync(System.String)">
+            <summary>
+            Delete a device
+            </summary>
+            <remarks>
+            Permanently deletes a device. This operation cannot be undone.
+            </remarks>
+            <param name='id'>
+            The identifier of the device to be deleted.
+            </param>
+            <exception cref="T:Mailosaur.Models.MailosaurException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Mailosaur.Operations.Files.#ctor(System.Net.Http.HttpClient)">
+            <summary>
+            Initializes a new instance of the Files class.
+            </summary>
+            <param name='client'>
+            Reference to the http client.
+            </param>
+        </member>
+        <member name="M:Mailosaur.Operations.Files.GetAttachment(System.String)">
+            <summary>
+            Download an attachment
+            </summary>
+            <remarks>
+            Downloads a single attachment. Simply supply the unique identifier for the
+            required attachment.
+            </remarks>
+            <param name='id'>
+            The identifier of the attachment to be downloaded.
+            </param>
+        </member>
+        <member name="M:Mailosaur.Operations.Files.GetAttachmentAsync(System.String)">
+            <summary>
+            Download an attachment
+            </summary>
+            <remarks>
+            Downloads a single attachment. Simply supply the unique identifier for the
+            required attachment.
+            </remarks>
+            <param name='id'>
+            The identifier of the attachment to be downloaded.
+            </param>
+        </member>
+        <member name="M:Mailosaur.Operations.Files.GetEmail(System.String)">
+            <summary>
+            Download EML
+            </summary>
+            <remarks>
+            Downloads an EML file representing the specified email. Simply supply the
+            unique identifier for the required email.
+            </remarks>
+            <param name='id'>
+            The identifier of the email to be downloaded.
+            </param>
+        </member>
+        <member name="M:Mailosaur.Operations.Files.GetEmailAsync(System.String)">
+            <summary>
+            Download EML
+            </summary>
+            <remarks>
+            Downloads an EML file representing the specified email. Simply supply the
+            unique identifier for the required email.
+            </remarks>
+            <param name='id'>
+            The identifier of the email to be downloaded.
+            </param>
+        </member>
+        <member name="M:Mailosaur.Operations.Files.GetPreview(System.String)">
+            <summary>
+            Download Email Preview
+            </summary>
+            <remarks>
+            Downloads a screenshot of your email rendered in a real email client. Simply supply 
+            the unique identifier for the required preview.
+            </remarks>
+            <param name='id'>
+            The identifier of the preview to be downloaded.
+            </param>
+        </member>
+        <member name="M:Mailosaur.Operations.Files.GetPreviewAsync(System.String)">
+            <summary>
+            Download Email Preview
+            </summary>
+            <remarks>
+            Downloads a screenshot of your email rendered in a real email client. Simply supply 
+            the unique identifier for the required preview.
+            </remarks>
+            <param name='id'>
+            The identifier of the preview to be downloaded.
+            </param>
+        </member>
+        <member name="M:Mailosaur.Operations.Messages.#ctor(System.Net.Http.HttpClient)">
+            <summary>
+            Initializes a new instance of the Messages class.
+            </summary>
+            <param name='client'>
+            Reference to the HttpClient.
+            </param>
+        </member>
+        <member name="M:Mailosaur.Operations.Messages.Get(System.String,Mailosaur.Models.SearchCriteria,System.Int32,System.Nullable{System.DateTime})">
+            <summary>
+            Retrieve a message using search criteria
+            </summary>
+            <remarks>
+            Returns as soon as a message matching the specified search criteria is
+            found. This is the most efficient method of looking up a message.
+            </remarks>
+            <param name='server'>
+            The identifier of the server hosting the message.
+            </param>
+            <param name='criteria'>
+            The search criteria to use in order to find a match.
+            </param>
+            <param name='timeout'>
+            Specify how long to wait for a matching result (in milliseconds).
+            </param>
+            <param name='receivedAfter'>
+            Limits results to only messages received after this date/time.
+            </param>
+        </member>
+        <member name="M:Mailosaur.Operations.Messages.GetAsync(System.String,Mailosaur.Models.SearchCriteria,System.Int32,System.Nullable{System.DateTime})">
+            <summary>
+            Retrieve a message using search criteria
+            </summary>
+            <remarks>
+            Returns as soon as a message matching the specified search criteria is
+            found. This is the most efficient method of looking up a message.
+            </remarks>
+            <param name='server'>
+            The identifier of the server hosting the message.
+            </param>
+            <param name='criteria'>
+            The search criteria to use in order to find a match.
+            </param>
+            <param name='timeout'>
+            Specify how long to wait for a matching result (in milliseconds).
+            </param>
+            <param name='receivedAfter'>
+            Limits results to only messages received after this date/time.
+            </param>
+        </member>
+        <member name="M:Mailosaur.Operations.Messages.GetById(System.String)">
+            <summary>
+            Retrieve a message
+            </summary>
+            <remarks>
+            Retrieves the detail for a single email message. Simply supply the unique
+            identifier for the required message.
+            </remarks>
+            <param name='id'>
+            The identifier of the email message to be retrieved.
+            </param>
+        </member>
+        <member name="M:Mailosaur.Operations.Messages.GetByIdAsync(System.String)">
+            <summary>
+            Retrieve a message
+            </summary>
+            <remarks>
+            Retrieves the detail for a single email message. Simply supply the unique
+            identifier for the required message.
+            </remarks>
+            <param name='id'>
+            The identifier of the email message to be retrieved.
+            </param>
+        </member>
+        <member name="M:Mailosaur.Operations.Messages.Delete(System.String)">
+            <summary>
+             a message
+            </summary>
+            <remarks>
+            Permanently deletes a message. This operation cannot be undone. Also
+            deletes any attachments related to the message.
+            </remarks>
+            <param name='id'>
+            The identifier of the message to be deleted.
+            </param>
+        </member>
+        <member name="M:Mailosaur.Operations.Messages.DeleteAsync(System.String)">
+            <summary>
+            Delete a message
+            </summary>
+            <remarks>
+            Permanently deletes a message. This operation cannot be undone. Also
+            deletes any attachments related to the message.
+            </remarks>
+            <param name='id'>
+            The identifier of the message to be deleted.
+            </param>
+        </member>
+        <member name="M:Mailosaur.Operations.Messages.List(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.DateTime},System.String)">
+            <summary>
+            List all messages
+            </summary>
+            <remarks>
+            Returns a list of your messages in summary form. The summaries are returned
+            sorted by received date, with the most recently-received messages appearing
+            first.
+            </remarks>
+            <param name='server'>
+            The identifier of the server hosting the messages.
+            </param>
+            <param name='page'>
+            Used in conjunction with `itemsPerPage` to support pagination.
+            </param>
+            <param name='itemsPerPage'>
+            A limit on the number of results to be returned per page. Can be set
+            between 1 and 1000 items, the default is 50.
+            </param>
+            <param name='receivedAfter'>
+            Limits results to only messages received after this date/time.
+            </param>
+            <param name='dir'>
+            Optionally limits results based on the direction (`Sent` or `Received`),
+            with the default being `Received`.
+            </param>
+        </member>
+        <member name="M:Mailosaur.Operations.Messages.ListAsync(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.DateTime},System.String)">
+            <summary>
+            List all messages
+            </summary>
+            <remarks>
+            Returns a list of your messages in summary form. The summaries are returned
+            sorted by received date, with the most recently-received messages appearing
+            first.
+            </remarks>
+            <param name='server'>
+            The identifier of the server hosting the messages.
+            </param>
+            <param name='page'>
+            Used in conjunction with `itemsPerPage` to support pagination.
+            </param>
+            <param name='itemsPerPage'>
+            A limit on the number of results to be returned per page. Can be set
+            between 1 and 1000 items, the default is 50.
+            </param>
+            <param name='receivedAfter'>
+            Limits results to only messages received after this date/time.
+            </param>
+            <param name='dir'>
+            Optionally limits results based on the direction (`Sent` or `Received`),
+            with the default being `Received`.
+            </param>
+        </member>
+        <member name="M:Mailosaur.Operations.Messages.DeleteAll(System.String)">
+            <summary>
+            Delete all messages
+            </summary>
+            <remarks>
+            Permanently deletes all messages held by the specified server. This
+            operation cannot be undone. Also deletes any attachments related to each
+            message.
+            </remarks>
+            <param name='server'>
+            The identifier of the server to be emptied.
+            </param>
+        </member>
+        <member name="M:Mailosaur.Operations.Messages.DeleteAllAsync(System.String)">
+            <summary>
+            Delete all messages
+            </summary>
+            <remarks>
+            Permanently deletes all messages held by the specified server. This
+            operation cannot be undone. Also deletes any attachments related to each
+            message.
+            </remarks>
+            <param name='server'>
+            The identifier of the server to be emptied.
+            </param>
+        </member>
+        <member name="M:Mailosaur.Operations.Messages.Search(System.String,Mailosaur.Models.SearchCriteria,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.DateTime},System.Boolean,System.String)">
+            <summary>
+            Search for messages
+            </summary>
+            <remarks>
+            Returns a list of messages matching the specified search criteria, in
+            summary form. The messages are returned sorted by received date, with the
+            most recently-received messages appearing first.
+            </remarks>
+            <param name='server'>
+            The identifier of the server hosting the messages.
+            </param>
+            <param name='criteria'>
+            The search criteria to match results against.
+            </param>
+            <param name='page'>
+            Used in conjunction with `itemsPerPage` to support pagination.
+            </param>
+            <param name='itemsPerPage'>
+            A limit on the number of results to be returned per page. Can be set
+            between 1 and 1000 items, the default is 50.
+            </param>
+            <param name='timeout'>
+            Specify how long to wait for a matching result (in milliseconds).
+            </param>
+            <param name='receivedAfter'>
+            Limits results to only messages received after this date/time.
+            </param>
+            <param name='errorOnTimeout'>
+             When set to false, an error will not be throw if timeout is reached
+             (default: true).
+            </param>
+            <param name='dir'>
+            Optionally limits results based on the direction (`Sent` or `Received`),
+            with the default being `Received`.
+            </param>
+        </member>
+        <member name="M:Mailosaur.Operations.Messages.SearchAsync(System.String,Mailosaur.Models.SearchCriteria,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.DateTime},System.Boolean,System.String)">
+            <summary>
+            Search for messages
+            </summary>
+            <remarks>
+            Returns a list of messages matching the specified search criteria, in
+            summary form. The messages are returned sorted by received date, with the
+            most recently-received messages appearing first.
+            </remarks>
+            <param name='server'>
+            The identifier of the server hosting the messages.
+            </param>
+            <param name='criteria'>
+            The search criteria to match results against.
+            </param>
+            <param name='page'>
+            Used in conjunction with `itemsPerPage` to support pagination.
+            </param>
+            <param name='itemsPerPage'>
+            A limit on the number of results to be returned per page. Can be set
+            between 1 and 1000 items, the default is 50.
+            </param>
+            <param name='timeout'>
+            Specify how long to wait for a matching result (in milliseconds).
+            </param>
+            <param name='receivedAfter'>
+            Limits results to only messages received after this date/time.
+            </param>
+            <param name='errorOnTimeout'>
+             When set to false, an error will not be throw if timeout is reached
+             (default: true).
+            </param>
+            <param name='dir'>
+            Optionally limits results based on the direction (`Sent` or `Received`),
+            with the default being `Received`.
+            </param>
+        </member>
+        <member name="M:Mailosaur.Operations.Messages.Create(System.String,Mailosaur.Models.MessageCreateOptions)">
+            <summary>
+            Create a message
+            </summary>
+            <remarks>
+            Creates a new message that can be sent to a verified email address. This is 
+            useful in scenarios where you want an email to trigger a workflow in your
+            product.
+            </remarks>
+            <param name='server'>
+            The identifier of the server to create the message in.
+            </param>
+            <param name='messageCreateOptions'>
+            The options with which to create the message.
+            </param>
+            <exception cref="T:Mailosaur.Models.MailosaurException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Mailosaur.Operations.Messages.CreateAsync(System.String,Mailosaur.Models.MessageCreateOptions)">
+            <summary>
+            Create a message
+            </summary>
+            <remarks>
+            Creates a new message that can be sent to a verified email address. This is 
+            useful in scenarios where you want an email to trigger a workflow in your
+            product.
+            </remarks>
+            <param name='server'>
+            The identifier of the server to create the message in.
+            </param>
+            <param name='messageCreateOptions'>
+            The options with which to create the message.
+            </param>
+            <exception cref="T:Mailosaur.Models.MailosaurException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Mailosaur.Operations.Messages.Forward(System.String,Mailosaur.Models.MessageForwardOptions)">
+            <summary>
+            Forward an email
+            </summary>
+            <remarks>
+            Forwards the specified email to a verified email address.
+            </remarks>
+            <param name='id'>
+            The identifier of the email to forward.
+            </param>
+            <param name='messageForwardOptions'>
+            The options with which to forward the email.
+            </param>
+            <exception cref="T:Mailosaur.Models.MailosaurException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Mailosaur.Operations.Messages.ForwardAsync(System.String,Mailosaur.Models.MessageForwardOptions)">
+            <summary>
+            Forward an email
+            </summary>
+            <remarks>
+            Forwards the specified email to a verified email address.
+            </remarks>
+            <param name='id'>
+            The identifier of the email to forward.
+            </param>
+            <param name='messageForwardOptions'>
+            The options with which to forward the email.
+            </param>
+            <exception cref="T:Mailosaur.Models.MailosaurException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Mailosaur.Operations.Messages.Reply(System.String,Mailosaur.Models.MessageReplyOptions)">
+            <summary>
+            Reply to an email
+            </summary>
+            <remarks>
+            Sends a reply to the specified email. This is useful for when simulating a user
+            replying to one of your emails.
+            </remarks>
+            <param name='id'>
+            The identifier of the email to reply to.
+            </param>
+            <param name='messageReplyOptions'>
+            The options with which to reply to the email.
+            </param>
+            <exception cref="T:Mailosaur.Models.MailosaurException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Mailosaur.Operations.Messages.ReplyAsync(System.String,Mailosaur.Models.MessageReplyOptions)">
+            <summary>
+            Reply to an email
+            </summary>
+            <remarks>
+            Sends a reply to the specified email. This is useful for when simulating a user
+            replying to one of your emails.
+            </remarks>
+            <param name='id'>
+            The identifier of the email to reply to.
+            </param>
+            <param name='messageReplyOptions'>
+            The options with which to reply to the email.
+            </param>
+            <exception cref="T:Mailosaur.Models.MailosaurException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Mailosaur.Operations.Messages.GeneratePreviews(System.String,Mailosaur.Models.PreviewRequestOptions)">
+            <summary>
+            Generate email previews
+            </summary>
+            <remarks>
+            Generates screenshots of an email rendered in the specified email clients.
+            </remarks>
+            <param name='id'>
+            The identifier of the email to preview.
+            </param>
+            <param name='options'>
+            The options with which to generate previews.
+            </param>
+            <exception cref="T:Mailosaur.Models.MailosaurException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Mailosaur.Operations.Messages.GeneratePreviewsAsync(System.String,Mailosaur.Models.PreviewRequestOptions)">
+            <summary>
+            Generate email previews
+            </summary>
+            <remarks>
+            Generates screenshots of an email rendered in the specified email clients.
+            </remarks>
+            <param name='id'>
+            The identifier of the email to preview.
+            </param>
+            <param name='options'>
+            The options with which to generate previews.
+            </param>
+            <exception cref="T:Mailosaur.Models.MailosaurException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Mailosaur.Operations.OperationBase.#ctor(System.Net.Http.HttpClient)">
+            <summary>
+            Initializes a new instance of the OperationBase class.
+            </summary>
+            <param name='client'>
+            Reference to the HttpClient.
+            </param>
+        </member>
+        <member name="F:Mailosaur.Operations.OperationBase._client">
+            <summary>
+            Gets a reference to the HttpClient
+            </summary>
+        </member>
+        <member name="T:Mailosaur.Operations.Previews">
+            <summary>
+            Previews operations.
+            </summary>
+        </member>
+        <member name="M:Mailosaur.Operations.Previews.#ctor(System.Net.Http.HttpClient)">
+            <summary>
+            Initializes a new instance of the Previews class.
+            </summary>
+            <param name='client'>
+            Reference to the HttpClient.
+            </param>
+        </member>
+        <member name="M:Mailosaur.Operations.Previews.ListEmailClients">
+            <summary>
+            List all email preview clients
+            </summary>
+            <remarks>
+            Returns the list of all email clients that can be used to generate email previews.
+            </remarks>
+            <exception cref="T:Mailosaur.Models.MailosaurException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Mailosaur.Operations.Previews.ListEmailClientsAsync">
+            <summary>
+            List all email preview clients
+            </summary>
+            <remarks>
+            Returns the list of all email clients that can be used to generate email previews.
+            </remarks>
+            <exception cref="T:Mailosaur.Models.MailosaurException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="T:Mailosaur.Operations.Servers">
+            <summary>
+            Servers operations.
+            </summary>
+        </member>
+        <member name="M:Mailosaur.Operations.Servers.#ctor(System.Net.Http.HttpClient)">
+            <summary>
+            Initializes a new instance of the Servers class.
+            </summary>
+            <param name='client'>
+            Reference to the HttpClient.
+            </param>
+        </member>
+        <member name="M:Mailosaur.Operations.Servers.GenerateEmailAddress(System.String)">
+            <summary>
+            Generates a random email address for use with this server.
+            </summary>
+            <param name="serverId">Server identifier.</param>
+            <returns>A random new email address that will end up in this server.</returns>
+        </member>
+        <member name="M:Mailosaur.Operations.Servers.List">
+            <summary>
+            List all servers
+            </summary>
+            <remarks>
+            Returns a list of your virtual SMTP servers. Servers are returned sorted in
+            alphabetical order.
+            </remarks>
+            <exception cref="T:Mailosaur.Models.MailosaurException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Mailosaur.Operations.Servers.ListAsync">
+            <summary>
+            List all servers
+            </summary>
+            <remarks>
+            Returns a list of your virtual SMTP servers. Servers are returned sorted in
+            alphabetical order.
+            </remarks>
+            <exception cref="T:Mailosaur.Models.MailosaurException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Mailosaur.Operations.Servers.Create(Mailosaur.Models.ServerCreateOptions)">
+            <summary>
+            Create a server
+            </summary>
+            <remarks>
+            Creates a new virtual SMTP server and returns it.
+            </remarks>
+            <param name='serverCreateOptions'>
+            </param>
+            <exception cref="T:Mailosaur.Models.MailosaurException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Mailosaur.Operations.Servers.CreateAsync(Mailosaur.Models.ServerCreateOptions)">
+            <summary>
+            Create a server
+            </summary>
+            <remarks>
+            Creates a new virtual SMTP server and returns it.
+            </remarks>
+            <param name='serverCreateOptions'>
+            </param>
+            <exception cref="T:Mailosaur.Models.MailosaurException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Mailosaur.Operations.Servers.Get(System.String)">
+            <summary>
+            Retrieve a server
+            </summary>
+            <remarks>
+            Retrieves the detail for a single server. Simply supply the unique
+            identifier for the required server.
+            </remarks>
+            <param name='id'>
+            The identifier of the server to be retrieved.
+            </param>
+            <exception cref="T:Mailosaur.Models.MailosaurException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Mailosaur.Operations.Servers.GetAsync(System.String)">
+            <summary>
+            Retrieve a server
+            </summary>
+            <remarks>
+            Retrieves the detail for a single server. Simply supply the unique
+            identifier for the required server.
+            </remarks>
+            <param name='id'>
+            The identifier of the server to be retrieved.
+            </param>
+            <exception cref="T:Mailosaur.Models.MailosaurException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Mailosaur.Operations.Servers.Update(System.String,Mailosaur.Models.Server)">
+            <summary>
+            Update a server
+            </summary>
+            <remarks>
+            Updats a single server and returns it.
+            </remarks>
+            <param name='id'>
+            The identifier of the server to be updated.
+            </param>
+            <param name='server'>
+            </param>
+            <exception cref="T:Mailosaur.Models.MailosaurException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Mailosaur.Operations.Servers.UpdateAsync(System.String,Mailosaur.Models.Server)">
+            <summary>
+            Update a server
+            </summary>
+            <remarks>
+            Updats a single server and returns it.
+            </remarks>
+            <param name='id'>
+            The identifier of the server to be updated.
+            </param>
+            <param name='server'>
+            </param>
+            <exception cref="T:Mailosaur.Models.MailosaurException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Mailosaur.Operations.Servers.Delete(System.String)">
+            <summary>
+            Delete a server
+            </summary>
+            <remarks>
+            Permanently deletes a server. This operation cannot be undone. Also deletes
+            all messages and associated attachments within the server.
+            </remarks>
+            <param name='id'>
+            The identifier of the server to be deleted.
+            </param>
+            <exception cref="T:Mailosaur.Models.MailosaurException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Mailosaur.Operations.Servers.DeleteAsync(System.String)">
+            <summary>
+            Delete a server
+            </summary>
+            <remarks>
+            Permanently deletes a server. This operation cannot be undone. Also deletes
+            all messages and associated attachments within the server.
+            </remarks>
+            <param name='id'>
+            The identifier of the server to be deleted.
+            </param>
+            <exception cref="T:Mailosaur.Models.MailosaurException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="T:Mailosaur.Operations.Usage">
+            <summary>
+            Usage operations.
+            </summary>
+        </member>
+        <member name="M:Mailosaur.Operations.Usage.#ctor(System.Net.Http.HttpClient)">
+            <summary>
+            Initializes a new instance of the Usage class.
+            </summary>
+            <param name='client'>
+            Reference to the HttpClient.
+            </param>
+        </member>
+        <member name="M:Mailosaur.Operations.Usage.Limits">
+            <summary>
+            Retrieve account usage limits.
+            </summary>
+            <remarks>
+            Details the current limits and usage for your account.
+            </remarks>
+            <exception cref="T:Mailosaur.Models.MailosaurException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Mailosaur.Operations.Usage.LimitsAsync">
+            <summary>
+            Retrieve account usage limits.
+            </summary>
+            <remarks>
+            Details the current limits and usage for your account.
+            </remarks>
+            <exception cref="T:Mailosaur.Models.MailosaurException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Mailosaur.Operations.Usage.Transactions">
+            <summary>
+            List account transactions.
+            </summary>
+            <remarks>
+            Retrieves the last 31 days of transactional usage.
+            </remarks>
+            <exception cref="T:Mailosaur.Models.MailosaurException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Mailosaur.Operations.Usage.TransactionsAsync">
+            <summary>
+            List account transactions.
+            </summary>
+            <remarks>
+            Retrieves the last 31 days of transactional usage.
+            </remarks>
+            <exception cref="T:Mailosaur.Models.MailosaurException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+    </members>
+</doc>
