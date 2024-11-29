@@ -11,7 +11,7 @@ namespace Magento.Magento
     {
         #region Locators
         By email_input = By.Name("email"); 
-        By submit_button = By.CssSelector(".action.submit.primary");
+        By submit_button = By.CssSelector("submit");
         #endregion
 
         #region Methods
@@ -20,8 +20,6 @@ namespace Magento.Magento
             Write(email_input, email);  
             Click(submit_button);     
         }
-
-
         #endregion
     }
 }

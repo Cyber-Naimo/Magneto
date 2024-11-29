@@ -41,24 +41,18 @@ namespace Magento
             }
         }
 
-        public static void Write(By by, string data)
+        public void Write(By by, string data)
         {
             driver.FindElement(by).SendKeys(data);
         }
-        public static void Click(By by)
+        public void Click(By by)
         {
             driver.FindElement(by).Click();
         }
 
-        public static void Url(string url)
+        public void Url(string url)
         {
             driver.Url = url;
         }
-
-        public static string GetText(By by)
-        {
-            return driver.FindElement(by).Text;
-        }
-
     }
 }
