@@ -1,17 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Hashmat\\source\\repos\\Magento\\",
+  "WorkspaceRootPath": "C:\\Users\\Mohsin Khan\\source\\repos\\Magneto\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|c:\\users\\hashmat\\source\\repos\\magento\\magento\\executionpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|C:\\Users\\Mohsin Khan\\source\\repos\\Magneto\\magento\\executionpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|solutionrelative:magento\\executionpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|c:\\users\\hashmat\\source\\repos\\magento\\magento\\basepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|solutionrelative:magento\\basepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|c:\\users\\hashmat\\source\\repos\\magento\\magento\\magento\\myaccountpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|c:\\users\\mohsin khan\\source\\repos\\magneto\\magento\\magento\\myaccountpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|solutionrelative:magento\\magento\\myaccountpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -28,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ExecutionPage.cs",
-              "DocumentMoniker": "C:\\Users\\Hashmat\\source\\repos\\Magento\\Magento\\ExecutionPage.cs",
+              "DocumentMoniker": "C:\\Users\\Mohsin Khan\\source\\repos\\Magneto\\Magento\\ExecutionPage.cs",
               "RelativeDocumentMoniker": "Magento\\ExecutionPage.cs",
-              "ToolTip": "C:\\Users\\Hashmat\\source\\repos\\Magento\\Magento\\ExecutionPage.cs",
+              "ToolTip": "C:\\Users\\Mohsin Khan\\source\\repos\\Magneto\\Magento\\ExecutionPage.cs",
               "RelativeToolTip": "Magento\\ExecutionPage.cs",
-              "ViewState": "AgIAAJcAAAAAAAAAAAAAAIkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAqwIsAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-27T13:37:48.582Z",
               "IsPinned": true,
@@ -40,34 +36,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "MyAccountPage.cs",
-              "DocumentMoniker": "C:\\Users\\Hashmat\\source\\repos\\Magento\\Magento\\Magento\\MyAccountPage.cs",
+              "DocumentMoniker": "C:\\Users\\Mohsin Khan\\source\\repos\\Magneto\\Magento\\Magento\\MyAccountPage.cs",
               "RelativeDocumentMoniker": "Magento\\Magento\\MyAccountPage.cs",
-              "ToolTip": "C:\\Users\\Hashmat\\source\\repos\\Magento\\Magento\\Magento\\MyAccountPage.cs",
+              "ToolTip": "C:\\Users\\Mohsin Khan\\source\\repos\\Magneto\\Magento\\Magento\\MyAccountPage.cs",
               "RelativeToolTip": "Magento\\Magento\\MyAccountPage.cs",
-              "ViewState": "AgIAAKsAAAAAAAAAAAAuwBIAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAQwD0AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T16:26:51.536Z",
-              "IsPinned": true,
+              "WhenOpened": "2024-11-29T07:32:39.348Z",
               "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BasePage.cs",
-              "DocumentMoniker": "C:\\Users\\Hashmat\\source\\repos\\Magento\\Magento\\BasePage.cs",
-              "RelativeDocumentMoniker": "Magento\\BasePage.cs",
-              "ToolTip": "C:\\Users\\Hashmat\\source\\repos\\Magento\\Magento\\BasePage.cs",
-              "RelativeToolTip": "Magento\\BasePage.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAA9wCsAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T17:03:01.064Z",
-              "EditorCaption": ""
             }
           ]
         }
