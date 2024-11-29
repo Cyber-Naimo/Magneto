@@ -54,5 +54,10 @@ namespace Magento
         {
             driver.Url = url;
         }
+
+        public static string GetText(By by)
+        {
+            return driver.FindElement(by).Text;
+        }
     }
 }

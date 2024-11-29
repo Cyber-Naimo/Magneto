@@ -7,7 +7,7 @@ using System.Threading;
 
 namespace Magento.Magento
 {
-    internal class MyAccountPage:BasePage
+    internal class MyAccountPage : BasePage
     {
         #region Locators
 
@@ -15,7 +15,7 @@ namespace Magento.Magento
         By switchButton = By.CssSelector("button.action.switch[data-action='customer-menu-toggle']");
         By myAccountLink = By.LinkText("My Account");
 
-        
+
         // My Wishlist
         By myWishListLink = By.LinkText("My Wish List");
 
@@ -69,7 +69,7 @@ namespace Magento.Magento
 
         #region Methods
 
-        public void AddAddress(string phone,string addr,string city,string province,string zip_code,string country)
+        public void AddAddress(string phone, string addr, string city, string province, string zip_code, string country)
         {
             Click(manageAddressesLink);
             Click(addNewAddressButton);
@@ -98,7 +98,7 @@ namespace Magento.Magento
 
             Write(newPasswordField, newPassword);
             Write(confirmPasswordField, newPassword);
-     
+
             Click(saveButton);
 
             string actualMessage = GetText(successMessageLocator);
@@ -110,7 +110,7 @@ namespace Magento.Magento
             Click(myOrderLink);
             Click(ViewOrderLink);
         }
-      
+
         public void AddAllItemtoCart()
         {
             Click(myWishListLink);
@@ -122,7 +122,7 @@ namespace Magento.Magento
             return driver.FindElement(wishlistEmptyMessage).Displayed;
         }
 
-        public void SendWishlist(string emails,string message)
+        public void SendWishlist(string emails, string message)
         {
             Click(myWishListLink);
             Thread.Sleep(5000);
@@ -132,43 +132,43 @@ namespace Magento.Magento
             Click(Submitbtn);
         }
 
-//public void ClickRatingStars()
-//    {
-//        try
-//        {
-//            // Find the rating star element (for example, the 5-star rating)
-//            IWebElement ratingStar = BasePage.driver.FindElement(By.XPath("//label[@for='Rating_5'][@title='5 stars']"));
+        //public void ClickRatingStars()
+        //    {
+        //        try
+        //        {
+        //            // Find the rating star element (for example, the 5-star rating)
+        //            IWebElement ratingStar = BasePage.driver.FindElement(By.XPath("//label[@for='Rating_5'][@title='5 stars']"));
 
-//            // Scroll into view to make sure the element is visible
-//            ((IJavaScriptExecutor)BasePage.driver).ExecuteScript("arguments[0].scrollIntoView(true);", ratingStar);
+        //            // Scroll into view to make sure the element is visible
+        //            ((IJavaScriptExecutor)BasePage.driver).ExecuteScript("arguments[0].scrollIntoView(true);", ratingStar);
 
-//                Thread.Sleep(5000);
-//                ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].click();", ratingStar);
-//            }
-//        catch (ElementClickInterceptedException ex)
-//        {
-//            Console.WriteLine("Error: " + ex.Message);
-//            // Retry logic or additional handling if necessary
-//        }
-//        catch (Exception ex)
-//        {
-//            Console.WriteLine("An error occurred: " + ex.Message);
-//        }
-//    }
+        //                Thread.Sleep(5000);
+        //                ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].click();", ratingStar);
+        //            }
+        //        catch (ElementClickInterceptedException ex)
+        //        {
+        //            Console.WriteLine("Error: " + ex.Message);
+        //            // Retry logic or additional handling if necessary
+        //        }
+        //        catch (Exception ex)
+        //        {
+        //            Console.WriteLine("An error occurred: " + ex.Message);
+        //        }
+        //    }
 
-//        public void AddReviewtoProduct(string summary, string detail)
-//        {
-//            Click(myWishListLink);
-//            Click(specificReviewLink);
+        //        public void AddReviewtoProduct(string summary, string detail)
+        //        {
+        //            Click(myWishListLink);
+        //            Click(specificReviewLink);
 
-//            Thread.Sleep(9000);
+        //            Thread.Sleep(9000);
 
-//            ClickRatingStars();
-//            Thread.Sleep(9000);
-//            Write(summary_tag, summary);
-//            Write(description, detail);
-//            Click(submitReviewButton);
-//        }
+        //            ClickRatingStars();
+        //            Thread.Sleep(9000);
+        //            Write(summary_tag, summary);
+        //            Write(description, detail);
+        //            Click(submitReviewButton);
+        //        }
 
 
 
