@@ -7,19 +7,21 @@ using System.Threading.Tasks;
 
 namespace Magento.Magento
 {
-    internal class ForgetPasswordPage:BasePage
+    internal class ForgetPasswordPage : BasePage
     {
         #region Locators
-        By email_input = By.Name("email"); 
-        By submit_button = By.CssSelector("submit");
+        By email_input = By.Name("email");
+        By submit_button = By.CssSelector(".action.submit.primary");
         #endregion
 
         #region Methods
         public void SubmitForgotPassword(string email)
         {
-            Write(email_input, email);  
-            Click(submit_button);     
+            Write(email_input, email);
+            Click(submit_button);
         }
+
+
         #endregion
     }
 }

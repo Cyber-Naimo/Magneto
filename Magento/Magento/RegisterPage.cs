@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 
 namespace Magento.Magento
 {
-    internal class RegisterPage:BasePage
+    internal class RegisterPage : BasePage
     {
         #region Locators
+        By header_Sign_up_link = By.LinkText("Create an Account");
         By first_name_tag = By.Id("firstname");
         By last_name_tag = By.Id("lastname");
         By email_tag = By.Name("email");
@@ -20,9 +21,10 @@ namespace Magento.Magento
         #endregion
 
         #region Methods
-        public void Signup(string url, string first_name, string last_name,string email, string password,string conf_password)
+        public void Signup(string url, string first_name, string last_name, string email, string password, string conf_password)
         {
             Url(url);
+            Click(header_Sign_up_link);
             Write(first_name_tag, first_name);
             Write(last_name_tag, last_name);
             Write(email_tag, email);
