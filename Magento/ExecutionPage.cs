@@ -70,6 +70,7 @@ namespace Magento
         public void Valid_Login_Test_Case()
         {
             login.Login(baseUrl, emailToUse, "Na1matKhan");
+           
             string result = BasePage.driver.FindElement(By.ClassName("logged-in")).Text;
             Assert.AreEqual(result, "Welcome, naimat naimat!");
         }
@@ -111,7 +112,7 @@ namespace Magento
             string orderId = "000028951";
             login.Login(baseUrl, emailToUse, "Na1matKhan");
             account.GotoAccountPage();
-            account.ViewOrderById(orderId);
+            account.ViewOrderById();
             string orderNumberOnPage = BasePage.GetText(By.CssSelector("span.base"));
             string extractedOrderNumber = orderNumberOnPage.Replace("Order # ", "").Trim();
             Assert.AreEqual(orderId, extractedOrderNumber, $"The order ID on the details page should be {orderId}.");
@@ -139,7 +140,6 @@ namespace Magento
         [TestMethod]
         public void AddReviewTestCase()
         {
-            string name = "Hello";
             string summary = "Good";
             string description = "Nice Product";
 

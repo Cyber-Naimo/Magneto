@@ -57,13 +57,11 @@ namespace Magento.Magento
 
         //Add Review to Product
         By specificReviewLink = By.XPath("//a[@href='https://magento.softwaretestingboard.com/savvy-shoulder-tote.html#reviews']");
-        By rating5Label = By.XPath("//label[@for='Rating_5'][@title='5 stars']");
-        By nickname = By.Name("nickname");
+        
         By summary_tag = By.Id("summary_field");
         By description = By.Name("detail");
         By submitReviewButton = By.CssSelector("button.action.submit.primary");
-        By ReviewsuccessMessage = By.XPath("//div[contains(text(),'You submitted your review for moderation.')]");
-
+        
 
         #endregion
 
@@ -105,7 +103,7 @@ namespace Magento.Magento
             Assert.AreEqual("You saved the account information.", actualMessage, "Password change success message did not match.");
         }
 
-        public void ViewOrderById(string orderId)
+        public void ViewOrderById()
         {
             Click(myOrderLink);
             Click(ViewOrderLink);
