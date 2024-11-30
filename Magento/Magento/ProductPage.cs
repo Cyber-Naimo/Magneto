@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Magento.Magento
 {
-    public class Product : BasePage
+    public class ProductPage : BasePage
     {
         #region Locators
         By category_men = By.XPath("//*[@id=\"ui-id-5\"]");

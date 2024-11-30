@@ -42,9 +42,9 @@ namespace Magento
 
         LoginPage login = new LoginPage();
         RegisterPage register = new RegisterPage();
-        Product product = new Product();
-        Cart cart = new Cart();
-        Checkout checkout = new Checkout();
+        ProductPage product = new ProductPage();
+        CartPage cart = new CartPage();
+        CheckoutPage checkout = new CheckoutPage();
         MyAccountPage account = new MyAccountPage();
 
 
@@ -198,7 +198,7 @@ namespace Magento
         [TestMethod]
         public void Valid_Add_to_Wishlist()
         {
-            login.Login("https://magento.softwaretestingboard.com/customer/account/login/", "fegom47501@kindomd.com", "Na1matKhan");
+            login.Login(baseUrl, emailToUse, "Na1matKhan");
             string Product_Name = "Proteus Fitness Jackshirt";
             By wishlist_product_name = By.XPath("/html/body/div[2]/main/div[2]/div[1]/form/div[1]/ol/li/div/strong/a");
             product.Add_to_Wishlist(Product_Name);
