@@ -59,7 +59,7 @@ namespace Magento.Magento
         By specificReviewLink = By.XPath("//a[@href='https://magento.softwaretestingboard.com/savvy-shoulder-tote.html#reviews']");
         By rating5Label = By.XPath("//label[@for='Rating_5'][@title='5 stars']");
         By nickname = By.Name("nickname");
-        By summary_tag = By.Name("title");
+        By summary_tag = By.Id("summary_field");
         By description = By.Name("detail");
         By submitReviewButton = By.CssSelector("button.action.submit.primary");
         By ReviewsuccessMessage = By.XPath("//div[contains(text(),'You submitted your review for moderation.')]");
@@ -132,43 +132,43 @@ namespace Magento.Magento
             Click(Submitbtn);
         }
 
-        //public void ClickRatingStars()
-        //    {
-        //        try
-        //        {
-        //            // Find the rating star element (for example, the 5-star rating)
-        //            IWebElement ratingStar = BasePage.driver.FindElement(By.XPath("//label[@for='Rating_5'][@title='5 stars']"));
+        public void ClickRatingStars()
+        {
+            try
+            {
+                // Find the rating star element (for example, the 5-star rating)
+                IWebElement ratingStar = BasePage.driver.FindElement(By.XPath("//label[@for='Rating_5'][@title='5 stars']"));
 
-        //            // Scroll into view to make sure the element is visible
-        //            ((IJavaScriptExecutor)BasePage.driver).ExecuteScript("arguments[0].scrollIntoView(true);", ratingStar);
+                // Scroll into view to make sure the element is visible
+                ((IJavaScriptExecutor)BasePage.driver).ExecuteScript("arguments[0].scrollIntoView(true);", ratingStar);
 
-        //                Thread.Sleep(5000);
-        //                ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].click();", ratingStar);
-        //            }
-        //        catch (ElementClickInterceptedException ex)
-        //        {
-        //            Console.WriteLine("Error: " + ex.Message);
-        //            // Retry logic or additional handling if necessary
-        //        }
-        //        catch (Exception ex)
-        //        {
-        //            Console.WriteLine("An error occurred: " + ex.Message);
-        //        }
-        //    }
+                Thread.Sleep(5000);
+                ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].click();", ratingStar);
+            }
+            catch (ElementClickInterceptedException ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+                // Retry logic or additional handling if necessary
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred: " + ex.Message);
+            }
+        }
 
-        //        public void AddReviewtoProduct(string summary, string detail)
-        //        {
-        //            Click(myWishListLink);
-        //            Click(specificReviewLink);
+        public void AddReviewtoProduct(string summary, string detail)
+        {
+            Click(myWishListLink);
+            Click(specificReviewLink);
 
-        //            Thread.Sleep(9000);
+            Thread.Sleep(9000);
 
-        //            ClickRatingStars();
-        //            Thread.Sleep(9000);
-        //            Write(summary_tag, summary);
-        //            Write(description, detail);
-        //            Click(submitReviewButton);
-        //        }
+            ClickRatingStars();
+            Thread.Sleep(9000);
+            Write(summary_tag, summary);
+            Write(description, detail);
+            Click(submitReviewButton);
+        }
 
 
 

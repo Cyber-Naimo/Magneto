@@ -39,6 +39,7 @@ namespace Magento
         private static string baseUrl = "https://magento.softwaretestingboard.com";
         private static string emailToUse = "remain-dear@x8xnajkk.mailosaur.net";
 
+
         LoginPage login = new LoginPage();
         RegisterPage register = new RegisterPage();
         Product product = new Product();
@@ -135,20 +136,21 @@ namespace Magento
             Assert.AreEqual(result, "Your wish list has been shared.");
         }
 
-        //[TestMethod]
-        //public void AddReviewTestCase()
-        //{
-        //    string name = "Hello";
-        //    string summary = "Good";
-        //    string description = "Nice Product";
+        [TestMethod]
+        public void AddReviewTestCase()
+        {
+            string name = "Hello";
+            string summary = "Good";
+            string description = "Nice Product";
 
-        //    login.Login(baseUrl, emailToUse, "Na1matKhan");
-        //    account.GotoAccountPage();
-        //    account.AddReviewtoProduct(summary, description);
-        //    string result = BasePage.GetText(By.XPath("//div[contains(text(),'You submitted your review for moderation.')]"));
-        //    Assert.AreEqual(result, "You submitted your review for moderation.");
+            login.Login(baseUrl, emailToUse, "Na1matKhan");
+            account.GotoAccountPage();
+            account.AddReviewtoProduct(summary, description);
+            string result = BasePage.GetText(By.XPath("//div[contains(text(),'You submitted your review for moderation.')]"));
+            Assert.AreEqual(result, "You submitted your review for moderation.");
 
-        //}
+        }
+
 
         [TestMethod]
         public void Valid_Order_Placement()
@@ -202,7 +204,7 @@ namespace Magento
             product.Add_to_Wishlist(Product_Name);
             string retrieve_product_name = BasePage.driver.FindElement(wishlist_product_name).Text;
             Assert.AreEqual(retrieve_product_name, Product_Name);
-        
+
         }
 
     }
