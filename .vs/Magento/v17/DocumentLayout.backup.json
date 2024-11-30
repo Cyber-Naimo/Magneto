@@ -1,38 +1,18 @@
 {
   "Version": 1,
-<<<<<<< HEAD
-  "WorkspaceRootPath": "C:\\Users\\Mohsin Khan\\source\\repos\\Magneto\\",
+  "WorkspaceRootPath": "C:\\Users\\Hashmat\\source\\repos\\Magento\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|C:\\Users\\Mohsin Khan\\source\\repos\\Magneto\\magento\\executionpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|solutionrelative:magento\\executionpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|c:\\users\\mohsin khan\\source\\repos\\magneto\\magento\\magento\\myaccountpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|C:\\Users\\Hashmat\\source\\repos\\Magento\\magento\\magento\\myaccountpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|solutionrelative:magento\\magento\\myaccountpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-  "WorkspaceRootPath": "D:\\Work\\FAST\\Semester 7\\ST\\Project\\Git Merging Repo\\Magneto\\",
-  "Documents": [
+    },
     {
-      "AbsoluteMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|d:\\work\\fast\\semester 7\\st\\project\\git merging repo\\magneto\\magento\\executionpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|c:\\users\\hashmat\\source\\repos\\magento\\magento\\executionpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|solutionrelative:magento\\executionpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|D:\\Work\\FAST\\Semester 7\\ST\\Project\\Git Merging Repo\\Magneto\\magento\\basepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|c:\\users\\hashmat\\source\\repos\\magento\\magento\\basepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|solutionrelative:magento\\basepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|d:\\work\\fast\\semester 7\\st\\project\\git merging repo\\magneto\\magento\\magento\\checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|solutionrelative:magento\\magento\\checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|d:\\work\\fast\\semester 7\\st\\project\\git merging repo\\magneto\\magento\\magento\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|solutionrelative:magento\\magento\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|d:\\work\\fast\\semester 7\\st\\project\\git merging repo\\magneto\\magento\\magento\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|solutionrelative:magento\\magento\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> main
     }
   ],
   "DocumentGroupContainers": [
@@ -42,105 +22,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 0,
-              "Title": "ExecutionPage.cs",
-              "DocumentMoniker": "C:\\Users\\Mohsin Khan\\source\\repos\\Magneto\\Magento\\ExecutionPage.cs",
-              "RelativeDocumentMoniker": "Magento\\ExecutionPage.cs",
-              "ToolTip": "C:\\Users\\Mohsin Khan\\source\\repos\\Magneto\\Magento\\ExecutionPage.cs",
-              "RelativeToolTip": "Magento\\ExecutionPage.cs",
-              "ViewState": "AgIAAH0AAAAAAAAAAAAqwIsAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T13:37:48.582Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MyAccountPage.cs",
-              "DocumentMoniker": "C:\\Users\\Mohsin Khan\\source\\repos\\Magneto\\Magento\\Magento\\MyAccountPage.cs",
-              "RelativeDocumentMoniker": "Magento\\Magento\\MyAccountPage.cs",
-              "ToolTip": "C:\\Users\\Mohsin Khan\\source\\repos\\Magneto\\Magento\\Magento\\MyAccountPage.cs",
-              "RelativeToolTip": "Magento\\Magento\\MyAccountPage.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAQwD0AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T07:32:39.348Z",
-=======
-              "DocumentIndex": 2,
-              "Title": "Checkout.cs",
-              "DocumentMoniker": "D:\\Work\\FAST\\Semester 7\\ST\\Project\\Git Merging Repo\\Magneto\\Magento\\Magento\\Checkout.cs",
-              "RelativeDocumentMoniker": "Magento\\Magento\\Checkout.cs",
-              "ToolTip": "D:\\Work\\FAST\\Semester 7\\ST\\Project\\Git Merging Repo\\Magneto\\Magento\\Magento\\Checkout.cs",
-              "RelativeToolTip": "Magento\\Magento\\Checkout.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAuwC0AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T18:39:22.771Z",
->>>>>>> main
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
-<<<<<<< HEAD
-=======
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ExecutionPage.cs",
-              "DocumentMoniker": "D:\\Work\\FAST\\Semester 7\\ST\\Project\\Git Merging Repo\\Magneto\\Magento\\ExecutionPage.cs",
-              "RelativeDocumentMoniker": "Magento\\ExecutionPage.cs",
-              "ToolTip": "D:\\Work\\FAST\\Semester 7\\ST\\Project\\Git Merging Repo\\Magneto\\Magento\\ExecutionPage.cs",
-              "RelativeToolTip": "Magento\\ExecutionPage.cs",
-              "ViewState": "AgIAAH4AAAAAAAAAAAAcwCcAAABQAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "BasePage.cs",
+              "DocumentMoniker": "C:\\Users\\Hashmat\\source\\repos\\Magento\\Magento\\BasePage.cs",
+              "RelativeDocumentMoniker": "Magento\\BasePage.cs",
+              "ToolTip": "C:\\Users\\Hashmat\\source\\repos\\Magento\\Magento\\BasePage.cs",
+              "RelativeToolTip": "Magento\\BasePage.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAcwBIAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T13:37:48.582Z",
+              "WhenOpened": "2024-11-30T12:05:36.438Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BasePage.cs",
-              "DocumentMoniker": "D:\\Work\\FAST\\Semester 7\\ST\\Project\\Git Merging Repo\\Magneto\\Magento\\BasePage.cs",
-              "RelativeDocumentMoniker": "Magento\\BasePage.cs",
-              "ToolTip": "D:\\Work\\FAST\\Semester 7\\ST\\Project\\Git Merging Repo\\Magneto\\Magento\\BasePage.cs",
-              "RelativeToolTip": "Magento\\BasePage.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAgwDwAAAAJAAAAAAAAAA==",
+              "Title": "ExecutionPage.cs",
+              "DocumentMoniker": "C:\\Users\\Hashmat\\source\\repos\\Magento\\Magento\\ExecutionPage.cs",
+              "RelativeDocumentMoniker": "Magento\\ExecutionPage.cs",
+              "ToolTip": "C:\\Users\\Hashmat\\source\\repos\\Magento\\Magento\\ExecutionPage.cs*",
+              "RelativeToolTip": "Magento\\ExecutionPage.cs*",
+              "ViewState": "AgIAACUAAAAAAAAAAAAQwCgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T15:26:57.067Z",
+              "WhenOpened": "2024-11-30T06:55:49.969Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Product.cs",
-              "DocumentMoniker": "D:\\Work\\FAST\\Semester 7\\ST\\Project\\Git Merging Repo\\Magneto\\Magento\\Magento\\Product.cs",
-              "RelativeDocumentMoniker": "Magento\\Magento\\Product.cs",
-              "ToolTip": "D:\\Work\\FAST\\Semester 7\\ST\\Project\\Git Merging Repo\\Magneto\\Magento\\Magento\\Product.cs",
-              "RelativeToolTip": "Magento\\Magento\\Product.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAAwDYAAAAVAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "MyAccountPage.cs",
+              "DocumentMoniker": "C:\\Users\\Hashmat\\source\\repos\\Magento\\Magento\\Magento\\MyAccountPage.cs",
+              "RelativeDocumentMoniker": "Magento\\Magento\\MyAccountPage.cs",
+              "ToolTip": "C:\\Users\\Hashmat\\source\\repos\\Magento\\Magento\\Magento\\MyAccountPage.cs",
+              "RelativeToolTip": "Magento\\Magento\\MyAccountPage.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAmwG0AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T18:20:29.13Z",
+              "WhenOpened": "2024-11-30T06:55:50.26Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Cart.cs",
-              "DocumentMoniker": "D:\\Work\\FAST\\Semester 7\\ST\\Project\\Git Merging Repo\\Magneto\\Magento\\Magento\\Cart.cs",
-              "RelativeDocumentMoniker": "Magento\\Magento\\Cart.cs",
-              "ToolTip": "D:\\Work\\FAST\\Semester 7\\ST\\Project\\Git Merging Repo\\Magneto\\Magento\\Magento\\Cart.cs",
-              "RelativeToolTip": "Magento\\Magento\\Cart.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T18:26:03.291Z",
-              "EditorCaption": ""
->>>>>>> main
             }
           ]
         }

@@ -1,8 +1,10 @@
-﻿using OpenQA.Selenium;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Magento.Magento
@@ -40,6 +42,15 @@ namespace Magento.Magento
 
         }
 
+        // Login Page
+        [TestMethod]
+        public void InValid_Login_Test_Case()
+        {
+            Login(baseUrl,emailToUse, "Na1matKhan123");
+            Thread.Sleep(1000);
+            string result = BasePage.driver.FindElement(By.ClassName("logged-in")).Text;
+            Assert.AreEqual(result, "Welcome, naimat naimat!");
+        }
         #endregion
 
 

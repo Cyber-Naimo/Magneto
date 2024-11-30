@@ -15,14 +15,10 @@ namespace Magento.Magento
         By switchButton = By.CssSelector("button.action.switch[data-action='customer-menu-toggle']");
         By myAccountLink = By.LinkText("My Account");
 
-
-        // My Wishlist
-        By myWishListLink = By.LinkText("My Wish List");
-
         // AddAddress
         By addNewAddressButton = By.CssSelector("button.action.primary.add[role='add-address']");
         By manageAddressesLink = By.LinkText("Manage Addresses");
-        By wishlistEmptyMessage = By.CssSelector(".block-wishlist .empty");
+        
         By phone_tag = By.Id("telephone");
         By address_tag = By.Id("street_1");
         By city_tag = By.Id("city");
@@ -41,32 +37,14 @@ namespace Magento.Magento
         By saveButton = By.CssSelector(".action.save.primary");
         By successMessageLocator = By.XPath("//div[contains(text(), 'You saved the account information.')]");
 
-
-        // ViewOrderById
-        By myOrderLink = By.LinkText("My Orders");
-        By ViewOrderLink = By.LinkText("View Order");
-
-        // AddAllItemtoCart
-        By addtocart_tag = By.XPath("//button[@title='Add All to Cart']");
-
-        // Shared Wished List
-        By shareWishlistButton = By.CssSelector("button[title='Share Wish List']");
-        By email_send_tag = By.Name("emails");
-        By msg_send_tag = By.Name("message");
-        By Submitbtn = By.CssSelector(".action.submit.primary");
-
-        //Add Review to Product
-        By specificReviewLink = By.XPath("//a[@href='https://magento.softwaretestingboard.com/savvy-shoulder-tote.html#reviews']");
-        By rating5Label = By.XPath("//label[@for='Rating_5'][@title='5 stars']");
-        By nickname = By.Name("nickname");
-        By summary_tag = By.Id("summary_field");
-        By description = By.Name("detail");
-        By submitReviewButton = By.CssSelector("button.action.submit.primary");
-        By ReviewsuccessMessage = By.XPath("//div[contains(text(),'You submitted your review for moderation.')]");
-
+        // View All reviews
+        By view_review = By.XPath("//a[@class='action view' and @href='https://magento.softwaretestingboard.com/review/customer/']");
 
         #endregion
 
+
+
+        LoginPage login = new LoginPage();
         #region Methods
 
         public void AddAddress(string phone, string addr, string city, string province, string zip_code, string country)
@@ -105,70 +83,42 @@ namespace Magento.Magento
             Assert.AreEqual("You saved the account information.", actualMessage, "Password change success message did not match.");
         }
 
-        public void ViewOrderById(string orderId)
+        public void ViewAllReviews()
         {
-            Click(myOrderLink);
-            Click(ViewOrderLink);
+            Click(view_review);
         }
 
-        public void AddAllItemtoCart()
-        {
-            Click(myWishListLink);
-            Click(addtocart_tag);
 
-        }
-        public bool IsWishlistEmpty()
-        {
-            return driver.FindElement(wishlistEmptyMessage).Displayed;
-        }
 
-        public void SendWishlist(string emails, string message)
+        [TestMethod]
+        public void AddAdditionalAdress()
         {
-            Click(myWishListLink);
-            Thread.Sleep(5000);
-            Click(shareWishlistButton);
-            Write(email_send_tag, emails);
-            Write(msg_send_tag, message);
-            Click(Submitbtn);
+            string phone = "12345";
+            string add = "House 22";
+            string city = "karachi";
+            string province = "Alaska";
+            string code = "12345";
+            string country = "United States";
+            login.Login(baseUrl, emailToUse, "Na1matKhan");
+            GotoAccountPage();
+            AddAddress(phone, add, city, province, code, country);
+            string result = BasePage.GetText(By.CssSelector("td[data-th='City']"));
+            Assert.AreEqual(city, result);
         }
 
-        public void ClickRatingStars()
+        [TestMethod]
+        public void TestViewAllReviews()
         {
-            try
-            {
-                // Find the rating star element (for example, the 5-star rating)
-                IWebElement ratingStar = BasePage.driver.FindElement(By.XPath("//label[@for='Rating_5'][@title='5 stars']"));
-
-                // Scroll into view to make sure the element is visible
-                ((IJavaScriptExecutor)BasePage.driver).ExecuteScript("arguments[0].scrollIntoView(true);", ratingStar);
-
-                Thread.Sleep(5000);
-                ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].click();", ratingStar);
-            }
-            catch (ElementClickInterceptedException ex)
-            {
-                Console.WriteLine("Error: " + ex.Message);
-                // Retry logic or additional handling if necessary
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("An error occurred: " + ex.Message);
-            }
+            login.Login(baseUrl, emailToUse, "Na1matKhan");
+            GotoAccountPage();
+            ViewAllReviews();
+            Assert.IsTrue(BasePage.driver.Url.Contains("review/customer"), "Failed to navigate to the reviews page.");
         }
 
-        public void AddReviewtoProduct(string summary, string detail)
-        {
-            Click(myWishListLink);
-            Click(specificReviewLink);
 
-            Thread.Sleep(9000);
 
-            ClickRatingStars();
-            Thread.Sleep(9000);
-            Write(summary_tag, summary);
-            Write(description, detail);
-            Click(submitReviewButton);
-        }
+
+
 
 
 
