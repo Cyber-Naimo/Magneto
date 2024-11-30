@@ -3,6 +3,7 @@ using Mailosaur;
 using Mailosaur.Models;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -12,6 +13,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
+
 
 namespace Magento
 {
@@ -42,6 +44,8 @@ namespace Magento
 
         private static string baseUrl = "https://magento.softwaretestingboard.com";
         private static string emailToUse = "remain-dear@x8xnajkk.mailosaur.net";
+        private static string user = "naimat";
+        private static string pass = "Na1matKhan";
 
 
         LoginPage login = new LoginPage();
@@ -51,7 +55,7 @@ namespace Magento
         [TestMethod]
         public void ValidRegisterTestCase()
         {
-            register.Signup(baseUrl,"naimat","naimat", emailToUse, "Na1matKhan","Na1matKhan");
+            register.Signup(baseUrl,user,user, emailToUse, pass,pass);
             string result = BasePage.driver.FindElement(By.ClassName("base")).Text;
             Assert.AreEqual(result, "My Account");
         }
@@ -59,7 +63,7 @@ namespace Magento
         [TestMethod]
         public void InValidRegisterTestCase()
         {
-            register.Signup(baseUrl, "naimat", "naimat",emailToUse, "Na1matKhan", "Na1matKhan");
+            register.Signup(baseUrl, user, user,emailToUse, pass, pass);
             IWebElement element = BasePage.driver.FindElement(By.XPath("//div[contains(text(), 'There is already an account with this email address.')]"));
             Assert.IsTrue(element.Text.Contains("There is already an account with this email address."), "Error message not displayed as expected.");
         }
@@ -69,17 +73,19 @@ namespace Magento
         [TestMethod]
         public void Valid_Login_Test_Case()
         {
-            login.Login(baseUrl,emailToUse,"Na1matKhan");
-            string result = BasePage.driver.FindElement(By.ClassName("logged-in")).Text;
+            login.Login(baseUrl,emailToUse,pass);
+            WebDriverWait wait = new WebDriverWait(BasePage.driver, TimeSpan.FromSeconds(10));
+            IWebElement loggedInElement = wait.Until(driver => driver.FindElement(By.ClassName("logged-in")));
+            string result = loggedInElement.Text;
             Assert.AreEqual(result, "Welcome, naimat naimat!");
         }
 
         [TestMethod]
         public void UpdatePassword()
         {
-            string currentPassword = "Na1matKhan";
-            string newPassword = "Na1matKhan";
-            login.Login(baseUrl, emailToUse, "Na1matKhan");
+            string currentPassword = pass;
+            string newPassword = pass;
+            login.Login(baseUrl, emailToUse, pass);
             account.GotoAccountPage();
             account.ChangePassword(currentPassword, newPassword);
 
@@ -97,7 +103,7 @@ namespace Magento
             string province = "Alaska";
             string code = "12345";
             string country = "United States";
-            login.Login(baseUrl, emailToUse, "Na1matKhan");
+            login.Login(baseUrl, emailToUse, pass);
             account.GotoAccountPage();
             account.AddAddress(phone, add, city, province, code,country);
             string result = BasePage.GetText(By.CssSelector("td[data-th='City']"));
@@ -109,7 +115,7 @@ namespace Magento
         {
 
             string orderId = "000028951";
-            login.Login(baseUrl, emailToUse, "Na1matKhan");
+            login.Login(baseUrl, emailToUse, pass);
             account.GotoAccountPage();
             account.ViewOrderById(orderId);
             string orderNumberOnPage = BasePage.GetText(By.CssSelector("span.base"));
@@ -120,7 +126,7 @@ namespace Magento
         [TestMethod]
         public void AddItemtoCartfromWishListPage()
         {
-            login.Login(baseUrl, emailToUse, "Na1matKhan");
+            login.Login(baseUrl, emailToUse, pass);
             account.GotoAccountPage();
             account.AddAllItemtoCart();
             Assert.IsTrue(account.IsWishlistEmpty());
@@ -129,7 +135,7 @@ namespace Magento
         [TestMethod]
         public void ShareWishList()
         {
-            login.Login(baseUrl, emailToUse, "Na1matKhan");
+            login.Login(baseUrl, emailToUse, pass);
             account.GotoAccountPage();
             account.SendWishlist(emailToUse, "Hello");
             string result = BasePage.GetText(By.XPath("//div[text()='Your wish list has been shared.']"));
@@ -139,11 +145,10 @@ namespace Magento
         [TestMethod]
         public void AddReviewTestCase()
         {
-            string name = "Hello";
             string summary = "Good";
             string description = "Nice Product";
 
-            login.Login(baseUrl, emailToUse, "Na1matKhan");
+            login.Login(baseUrl, emailToUse, pass);
             account.GotoAccountPage();
             account.AddReviewtoProduct(summary, description);
             string result = BasePage.GetText(By.XPath("//div[contains(text(),'You submitted your review for moderation.')]"));

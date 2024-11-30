@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\Mohsin Khan\\source\\repos\\Magneto\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|C:\\Users\\Mohsin Khan\\source\\repos\\Magneto\\magento\\executionpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|c:\\users\\mohsin khan\\source\\repos\\magneto\\magento\\executionpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|solutionrelative:magento\\executionpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|c:\\users\\mohsin khan\\source\\repos\\magneto\\magento\\magento\\myaccountpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|C:\\Users\\Mohsin Khan\\source\\repos\\Magneto\\magento\\magento\\myaccountpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|solutionrelative:magento\\magento\\myaccountpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -28,7 +28,7 @@
               "RelativeDocumentMoniker": "Magento\\ExecutionPage.cs",
               "ToolTip": "C:\\Users\\Mohsin Khan\\source\\repos\\Magneto\\Magento\\ExecutionPage.cs",
               "RelativeToolTip": "Magento\\ExecutionPage.cs",
-              "ViewState": "AgIAAH0AAAAAAAAAAAAqwIsAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAiwFEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-27T13:37:48.582Z",
               "IsPinned": true,
@@ -42,10 +42,9 @@
               "RelativeDocumentMoniker": "Magento\\Magento\\MyAccountPage.cs",
               "ToolTip": "C:\\Users\\Mohsin Khan\\source\\repos\\Magneto\\Magento\\Magento\\MyAccountPage.cs",
               "RelativeToolTip": "Magento\\Magento\\MyAccountPage.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAQwD0AAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T07:32:39.348Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T07:32:39.348Z"
             },
             {
               "$type": "Bookmark",
