@@ -7,7 +7,7 @@ using System.Threading;
 
 namespace Magento.Magento
 {
-    internal class MyAccountPage:BasePage
+    internal class MyAccountPage : BasePage
     {
         #region Locators
 
@@ -15,7 +15,7 @@ namespace Magento.Magento
         By switchButton = By.CssSelector("button.action.switch[data-action='customer-menu-toggle']");
         By myAccountLink = By.LinkText("My Account");
 
-        
+
         // My Wishlist
         By myWishListLink = By.LinkText("My Wish List");
 
@@ -69,7 +69,7 @@ namespace Magento.Magento
 
         #region Methods
 
-        public void AddAddress(string phone,string addr,string city,string province,string zip_code,string country)
+        public void AddAddress(string phone, string addr, string city, string province, string zip_code, string country)
         {
             Click(manageAddressesLink);
             Click(addNewAddressButton);
@@ -98,7 +98,7 @@ namespace Magento.Magento
 
             Write(newPasswordField, newPassword);
             Write(confirmPasswordField, newPassword);
-     
+
             Click(saveButton);
 
             string actualMessage = GetText(successMessageLocator);
@@ -110,7 +110,7 @@ namespace Magento.Magento
             Click(myOrderLink);
             Click(ViewOrderLink);
         }
-      
+
         public void AddAllItemtoCart()
         {
             Click(myWishListLink);
@@ -122,7 +122,7 @@ namespace Magento.Magento
             return driver.FindElement(wishlistEmptyMessage).Displayed;
         }
 
-        public void SendWishlist(string emails,string message)
+        public void SendWishlist(string emails, string message)
         {
             Click(myWishListLink);
             Thread.Sleep(5000);
