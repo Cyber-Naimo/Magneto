@@ -7,7 +7,6 @@ C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Microsoft.TestPlatform.A
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Magento.dll.config
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Magento.dll
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Magento.pdb
-C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Mailosaur.dll
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Microsoft.ApplicationInsights.dll
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Microsoft.Testing.Extensions.Telemetry.dll
@@ -20,7 +19,6 @@ C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Microsoft.TestPlatform.P
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
-C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\System.Buffers.dll
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\System.Collections.Immutable.dll
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\System.Diagnostics.DiagnosticSource.dll
@@ -36,7 +34,6 @@ C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\System.ValueTuple.dll
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\WebDriver.dll
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\WebDriver.Support.dll
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Microsoft.Win32.Registry.dll
-C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Mailosaur.xml
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Microsoft.ApplicationInsights.pdb
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Microsoft.ApplicationInsights.xml
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
@@ -47,7 +44,6 @@ C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Microsoft.Testing.Platfo
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Microsoft.Testing.Platform.MSBuild.xml
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
-C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\System.Buffers.xml
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\System.Collections.Immutable.xml
 C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\System.Diagnostics.DiagnosticSource.xml
@@ -158,3 +154,478 @@ C:\Users\Hashmat\source\repos\Magento\Magento\obj\Debug\Magento.csproj.CoreCompi
 C:\Users\Hashmat\source\repos\Magento\Magento\obj\Debug\Magento.csproj.Up2Date
 C:\Users\Hashmat\source\repos\Magento\Magento\obj\Debug\Magento.dll
 C:\Users\Hashmat\source\repos\Magento\Magento\obj\Debug\Magento.pdb
+<<<<<<< HEAD
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\selenium-manager\linux\selenium-manager
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\selenium-manager\macos\selenium-manager
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\selenium-manager\windows\selenium-manager.exe
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\Magento.dll.config
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\Magento.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\Magento.pdb
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\Mailosaur.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\Microsoft.ApplicationInsights.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\Microsoft.Testing.Extensions.Telemetry.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\Microsoft.Testing.Extensions.TrxReport.Abstractions.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\Microsoft.Testing.Extensions.VSTestBridge.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\Microsoft.Testing.Platform.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\Microsoft.Testing.Platform.MSBuild.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\Microsoft.TestPlatform.CoreUtilities.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\Microsoft.TestPlatform.PlatformAbstractions.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\System.Buffers.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\System.Collections.Immutable.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\System.Memory.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\System.Reflection.Metadata.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\System.Text.Json.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\System.ValueTuple.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\WebDriver.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\WebDriver.Support.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\Mailosaur.xml
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\Microsoft.ApplicationInsights.pdb
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\Microsoft.ApplicationInsights.xml
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\Microsoft.Testing.Extensions.Telemetry.xml
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\Microsoft.Testing.Extensions.TrxReport.Abstractions.xml
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\Microsoft.Testing.Extensions.VSTestBridge.xml
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\Microsoft.Testing.Platform.xml
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\Microsoft.Testing.Platform.MSBuild.xml
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\System.Buffers.xml
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\System.Collections.Immutable.xml
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\System.Memory.xml
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\System.Reflection.Metadata.xml
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\System.Text.Json.xml
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\System.ValueTuple.xml
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\WebDriver.xml
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\WebDriver.Support.xml
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\cs\Microsoft.Testing.Extensions.Telemetry.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\de\Microsoft.Testing.Extensions.Telemetry.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\es\Microsoft.Testing.Extensions.Telemetry.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\fr\Microsoft.Testing.Extensions.Telemetry.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\it\Microsoft.Testing.Extensions.Telemetry.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\ja\Microsoft.Testing.Extensions.Telemetry.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\ko\Microsoft.Testing.Extensions.Telemetry.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\pl\Microsoft.Testing.Extensions.Telemetry.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\pt-BR\Microsoft.Testing.Extensions.Telemetry.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\ru\Microsoft.Testing.Extensions.Telemetry.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\tr\Microsoft.Testing.Extensions.Telemetry.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\zh-Hans\Microsoft.Testing.Extensions.Telemetry.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\zh-Hant\Microsoft.Testing.Extensions.Telemetry.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\cs\Microsoft.Testing.Extensions.VSTestBridge.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\de\Microsoft.Testing.Extensions.VSTestBridge.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\es\Microsoft.Testing.Extensions.VSTestBridge.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\fr\Microsoft.Testing.Extensions.VSTestBridge.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\it\Microsoft.Testing.Extensions.VSTestBridge.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\ja\Microsoft.Testing.Extensions.VSTestBridge.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\ko\Microsoft.Testing.Extensions.VSTestBridge.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\pl\Microsoft.Testing.Extensions.VSTestBridge.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\pt-BR\Microsoft.Testing.Extensions.VSTestBridge.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\ru\Microsoft.Testing.Extensions.VSTestBridge.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\tr\Microsoft.Testing.Extensions.VSTestBridge.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\zh-Hans\Microsoft.Testing.Extensions.VSTestBridge.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\zh-Hant\Microsoft.Testing.Extensions.VSTestBridge.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\cs\Microsoft.Testing.Platform.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\de\Microsoft.Testing.Platform.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\es\Microsoft.Testing.Platform.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\fr\Microsoft.Testing.Platform.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\it\Microsoft.Testing.Platform.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\ja\Microsoft.Testing.Platform.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\ko\Microsoft.Testing.Platform.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\pl\Microsoft.Testing.Platform.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\pt-BR\Microsoft.Testing.Platform.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\ru\Microsoft.Testing.Platform.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\tr\Microsoft.Testing.Platform.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\zh-Hans\Microsoft.Testing.Platform.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\zh-Hant\Microsoft.Testing.Platform.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\cs\Microsoft.Testing.Platform.MSBuild.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\de\Microsoft.Testing.Platform.MSBuild.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\es\Microsoft.Testing.Platform.MSBuild.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\fr\Microsoft.Testing.Platform.MSBuild.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\it\Microsoft.Testing.Platform.MSBuild.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\ja\Microsoft.Testing.Platform.MSBuild.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\ko\Microsoft.Testing.Platform.MSBuild.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\pl\Microsoft.Testing.Platform.MSBuild.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\pt-BR\Microsoft.Testing.Platform.MSBuild.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\ru\Microsoft.Testing.Platform.MSBuild.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\tr\Microsoft.Testing.Platform.MSBuild.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\zh-Hans\Microsoft.Testing.Platform.MSBuild.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\zh-Hant\Microsoft.Testing.Platform.MSBuild.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\de\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\es\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\fr\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\it\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\ja\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\ko\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\pl\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\pt-BR\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\ru\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\tr\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\zh-Hans\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\zh-Hant\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\cs\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\de\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\fr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\it\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\ja\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\ko\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\pl\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\pt-BR\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\tr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\zh-Hans\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\zh-Hant\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\cs\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\de\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\fr\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\it\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\ja\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\ko\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\pl\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\pt-BR\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\tr\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\zh-Hans\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\bin\Debug\zh-Hant\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\obj\Debug\Magento.csproj.AssemblyReference.cache
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\obj\Debug\Magento.csproj.CoreCompileInputs.cache
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\obj\Debug\Magento.csproj.Up2Date
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\obj\Debug\Magento.dll
+C:\Users\Mohsin Khan\Source\Repos\Magneto\Magento\obj\Debug\Magento.pdb
+=======
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\selenium-manager\linux\selenium-manager
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\selenium-manager\macos\selenium-manager
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\selenium-manager\windows\selenium-manager.exe
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\Magento.dll.config
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\Magento.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\Magento.pdb
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\Microsoft.ApplicationInsights.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\Microsoft.Testing.Extensions.Telemetry.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\Microsoft.Testing.Extensions.TrxReport.Abstractions.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\Microsoft.Testing.Extensions.VSTestBridge.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\Microsoft.Testing.Platform.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\Microsoft.Testing.Platform.MSBuild.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\Microsoft.TestPlatform.CoreUtilities.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\Microsoft.TestPlatform.PlatformAbstractions.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\System.Buffers.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\System.Collections.Immutable.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\System.IO.Pipelines.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\System.Memory.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\System.Numerics.Vectors.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\System.Reflection.Metadata.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\System.Text.Encodings.Web.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\System.Text.Json.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\System.ValueTuple.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\WebDriver.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\WebDriver.Support.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\Microsoft.Win32.Registry.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\Microsoft.ApplicationInsights.pdb
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\Microsoft.ApplicationInsights.xml
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\Microsoft.Testing.Extensions.Telemetry.xml
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\Microsoft.Testing.Extensions.TrxReport.Abstractions.xml
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\Microsoft.Testing.Extensions.VSTestBridge.xml
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\Microsoft.Testing.Platform.xml
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\Microsoft.Testing.Platform.MSBuild.xml
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\System.Buffers.xml
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\System.Collections.Immutable.xml
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\System.IO.Pipelines.xml
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\System.Memory.xml
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\System.Numerics.Vectors.xml
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\System.Reflection.Metadata.xml
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\System.Text.Encodings.Web.xml
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\System.Text.Json.xml
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\System.ValueTuple.xml
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\WebDriver.xml
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\WebDriver.Support.xml
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\cs\Microsoft.Testing.Extensions.Telemetry.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\de\Microsoft.Testing.Extensions.Telemetry.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\es\Microsoft.Testing.Extensions.Telemetry.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\fr\Microsoft.Testing.Extensions.Telemetry.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\it\Microsoft.Testing.Extensions.Telemetry.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\ja\Microsoft.Testing.Extensions.Telemetry.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\ko\Microsoft.Testing.Extensions.Telemetry.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\pl\Microsoft.Testing.Extensions.Telemetry.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\pt-BR\Microsoft.Testing.Extensions.Telemetry.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\ru\Microsoft.Testing.Extensions.Telemetry.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\tr\Microsoft.Testing.Extensions.Telemetry.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\zh-Hans\Microsoft.Testing.Extensions.Telemetry.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\zh-Hant\Microsoft.Testing.Extensions.Telemetry.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\cs\Microsoft.Testing.Extensions.VSTestBridge.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\de\Microsoft.Testing.Extensions.VSTestBridge.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\es\Microsoft.Testing.Extensions.VSTestBridge.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\fr\Microsoft.Testing.Extensions.VSTestBridge.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\it\Microsoft.Testing.Extensions.VSTestBridge.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\ja\Microsoft.Testing.Extensions.VSTestBridge.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\ko\Microsoft.Testing.Extensions.VSTestBridge.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\pl\Microsoft.Testing.Extensions.VSTestBridge.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\pt-BR\Microsoft.Testing.Extensions.VSTestBridge.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\ru\Microsoft.Testing.Extensions.VSTestBridge.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\tr\Microsoft.Testing.Extensions.VSTestBridge.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\zh-Hans\Microsoft.Testing.Extensions.VSTestBridge.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\zh-Hant\Microsoft.Testing.Extensions.VSTestBridge.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\cs\Microsoft.Testing.Platform.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\de\Microsoft.Testing.Platform.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\es\Microsoft.Testing.Platform.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\fr\Microsoft.Testing.Platform.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\it\Microsoft.Testing.Platform.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\ja\Microsoft.Testing.Platform.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\ko\Microsoft.Testing.Platform.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\pl\Microsoft.Testing.Platform.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\pt-BR\Microsoft.Testing.Platform.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\ru\Microsoft.Testing.Platform.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\tr\Microsoft.Testing.Platform.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\zh-Hans\Microsoft.Testing.Platform.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\zh-Hant\Microsoft.Testing.Platform.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\cs\Microsoft.Testing.Platform.MSBuild.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\de\Microsoft.Testing.Platform.MSBuild.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\es\Microsoft.Testing.Platform.MSBuild.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\fr\Microsoft.Testing.Platform.MSBuild.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\it\Microsoft.Testing.Platform.MSBuild.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\ja\Microsoft.Testing.Platform.MSBuild.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\ko\Microsoft.Testing.Platform.MSBuild.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\pl\Microsoft.Testing.Platform.MSBuild.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\pt-BR\Microsoft.Testing.Platform.MSBuild.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\ru\Microsoft.Testing.Platform.MSBuild.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\tr\Microsoft.Testing.Platform.MSBuild.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\zh-Hans\Microsoft.Testing.Platform.MSBuild.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\zh-Hant\Microsoft.Testing.Platform.MSBuild.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\de\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\es\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\fr\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\it\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\ja\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\ko\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\pl\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\pt-BR\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\ru\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\tr\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\zh-Hans\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\zh-Hant\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\cs\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\de\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\fr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\it\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\ja\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\ko\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\pl\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\pt-BR\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\tr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\zh-Hans\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\zh-Hant\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\cs\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\de\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\fr\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\it\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\ja\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\ko\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\pl\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\pt-BR\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\tr\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\zh-Hans\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\bin\Debug\zh-Hant\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\obj\Debug\Magento.csproj.AssemblyReference.cache
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\obj\Debug\Magento.csproj.CoreCompileInputs.cache
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\obj\Debug\Magento.csproj.Up2Date
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\obj\Debug\Magento.dll
+D:\Work\FAST\Semester 7\ST\Project\Magento\Magneto\Magento\obj\Debug\Magento.pdb
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\obj\Debug\Magento.csproj.AssemblyReference.cache
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\obj\Debug\Magento.csproj.CoreCompileInputs.cache
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\obj\Debug\Magento.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\obj\Debug\Magento.pdb
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\selenium-manager\linux\selenium-manager
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\selenium-manager\macos\selenium-manager
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\selenium-manager\windows\selenium-manager.exe
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\Magento.dll.config
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\Magento.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\Magento.pdb
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\Microsoft.ApplicationInsights.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\Microsoft.Testing.Extensions.Telemetry.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\Microsoft.Testing.Extensions.TrxReport.Abstractions.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\Microsoft.Testing.Extensions.VSTestBridge.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\Microsoft.Testing.Platform.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\Microsoft.Testing.Platform.MSBuild.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\Microsoft.TestPlatform.CoreUtilities.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\Microsoft.TestPlatform.PlatformAbstractions.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\System.Buffers.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\System.Collections.Immutable.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\System.IO.Pipelines.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\System.Memory.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\System.Numerics.Vectors.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\System.Reflection.Metadata.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\System.Text.Encodings.Web.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\System.Text.Json.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\System.ValueTuple.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\WebDriver.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\WebDriver.Support.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\Microsoft.Win32.Registry.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\Microsoft.ApplicationInsights.pdb
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\Microsoft.ApplicationInsights.xml
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\Microsoft.Testing.Extensions.Telemetry.xml
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\Microsoft.Testing.Extensions.TrxReport.Abstractions.xml
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\Microsoft.Testing.Extensions.VSTestBridge.xml
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\Microsoft.Testing.Platform.xml
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\Microsoft.Testing.Platform.MSBuild.xml
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\System.Buffers.xml
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\System.Collections.Immutable.xml
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\System.IO.Pipelines.xml
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\System.Memory.xml
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\System.Numerics.Vectors.xml
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\System.Reflection.Metadata.xml
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\System.Text.Encodings.Web.xml
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\System.Text.Json.xml
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\System.ValueTuple.xml
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\WebDriver.xml
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\WebDriver.Support.xml
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\cs\Microsoft.Testing.Extensions.Telemetry.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\de\Microsoft.Testing.Extensions.Telemetry.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\es\Microsoft.Testing.Extensions.Telemetry.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\fr\Microsoft.Testing.Extensions.Telemetry.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\it\Microsoft.Testing.Extensions.Telemetry.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\ja\Microsoft.Testing.Extensions.Telemetry.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\ko\Microsoft.Testing.Extensions.Telemetry.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\pl\Microsoft.Testing.Extensions.Telemetry.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\pt-BR\Microsoft.Testing.Extensions.Telemetry.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\ru\Microsoft.Testing.Extensions.Telemetry.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\tr\Microsoft.Testing.Extensions.Telemetry.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\zh-Hans\Microsoft.Testing.Extensions.Telemetry.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\zh-Hant\Microsoft.Testing.Extensions.Telemetry.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\cs\Microsoft.Testing.Extensions.VSTestBridge.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\de\Microsoft.Testing.Extensions.VSTestBridge.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\es\Microsoft.Testing.Extensions.VSTestBridge.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\fr\Microsoft.Testing.Extensions.VSTestBridge.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\it\Microsoft.Testing.Extensions.VSTestBridge.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\ja\Microsoft.Testing.Extensions.VSTestBridge.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\ko\Microsoft.Testing.Extensions.VSTestBridge.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\pl\Microsoft.Testing.Extensions.VSTestBridge.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\pt-BR\Microsoft.Testing.Extensions.VSTestBridge.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\ru\Microsoft.Testing.Extensions.VSTestBridge.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\tr\Microsoft.Testing.Extensions.VSTestBridge.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\zh-Hans\Microsoft.Testing.Extensions.VSTestBridge.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\zh-Hant\Microsoft.Testing.Extensions.VSTestBridge.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\cs\Microsoft.Testing.Platform.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\de\Microsoft.Testing.Platform.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\es\Microsoft.Testing.Platform.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\fr\Microsoft.Testing.Platform.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\it\Microsoft.Testing.Platform.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\ja\Microsoft.Testing.Platform.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\ko\Microsoft.Testing.Platform.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\pl\Microsoft.Testing.Platform.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\pt-BR\Microsoft.Testing.Platform.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\ru\Microsoft.Testing.Platform.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\tr\Microsoft.Testing.Platform.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\zh-Hans\Microsoft.Testing.Platform.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\zh-Hant\Microsoft.Testing.Platform.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\cs\Microsoft.Testing.Platform.MSBuild.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\de\Microsoft.Testing.Platform.MSBuild.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\es\Microsoft.Testing.Platform.MSBuild.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\fr\Microsoft.Testing.Platform.MSBuild.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\it\Microsoft.Testing.Platform.MSBuild.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\ja\Microsoft.Testing.Platform.MSBuild.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\ko\Microsoft.Testing.Platform.MSBuild.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\pl\Microsoft.Testing.Platform.MSBuild.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\pt-BR\Microsoft.Testing.Platform.MSBuild.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\ru\Microsoft.Testing.Platform.MSBuild.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\tr\Microsoft.Testing.Platform.MSBuild.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\zh-Hans\Microsoft.Testing.Platform.MSBuild.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\zh-Hant\Microsoft.Testing.Platform.MSBuild.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\de\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\es\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\fr\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\it\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\ja\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\ko\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\pl\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\pt-BR\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\ru\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\tr\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\zh-Hans\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\zh-Hant\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\cs\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\de\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\fr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\it\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\ja\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\ko\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\pl\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\pt-BR\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\tr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\zh-Hans\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\zh-Hant\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\cs\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\de\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\fr\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\it\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\ja\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\ko\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\pl\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\pt-BR\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\tr\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\zh-Hans\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\bin\Debug\zh-Hant\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\Work\FAST\Semester 7\ST\Project\Git Merging Repo\Magneto\Magento\obj\Debug\Magento.csproj.Up2Date
+>>>>>>> main
