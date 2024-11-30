@@ -1,4 +1,6 @@
-﻿using OpenQA.Selenium;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.Win32;
+using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,6 +33,15 @@ namespace Magento.Magento
             Write(pass_tag, password);
             Write(confirm_pass_tag, conf_password);
             Click(signup_btn);
+        }
+
+
+        [TestMethod]
+        public void InValidRegisterTestCase()
+        {
+            Signup(baseUrl, "naimat", "naimat", emailToUse, "Na1matKhan", "Na1matKhan");
+            IWebElement element = BasePage.driver.FindElement(By.XPath("//div[contains(text(), 'There is already an account with this email address.')]"));
+            Assert.IsTrue(element.Text.Contains("There is already an account with this email address."), "Error message not displayed as expected.");
         }
         #endregion
     }

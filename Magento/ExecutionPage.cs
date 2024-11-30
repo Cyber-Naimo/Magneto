@@ -36,122 +36,80 @@ namespace Magento
         }
         #endregion
 
-        private static string baseUrl = "https://magento.softwaretestingboard.com";
-        private static string emailToUse = "remain-dear@x8xnajkk.mailosaur.net";
+        
 
 
         LoginPage login = new LoginPage();
         RegisterPage register = new RegisterPage();
-        Product product = new Product();
-        Cart cart = new Cart();
-        Checkout checkout = new Checkout();
+        ProductPage product = new ProductPage();
+        CartPage cart = new CartPage();
+        CheckoutPage checkout = new CheckoutPage();
         MyAccountPage account = new MyAccountPage();
+        MyOrdersPage orders = new MyOrdersPage();
+        MyWishlistPage wishlists = new MyWishlistPage();
+            
 
 
+        // RegisterPage
         [TestMethod]
         public void ValidRegisterTestCase()
         {
-            register.Signup(baseUrl, "naimat", "naimat", emailToUse, "Na1matKhan", "Na1matKhan");
+            register.Signup(BasePage.baseUrl, "naimat", "naimat", BasePage.emailToUse, "Na1matKhan", "Na1matKhan");
             string result = BasePage.driver.FindElement(By.ClassName("base")).Text;
             Assert.AreEqual(result, "My Account");
         }
 
-        [TestMethod]
-        public void InValidRegisterTestCase()
-        {
-            register.Signup(baseUrl, "naimat", "naimat", emailToUse, "Na1matKhan", "Na1matKhan");
-            IWebElement element = BasePage.driver.FindElement(By.XPath("//div[contains(text(), 'There is already an account with this email address.')]"));
-            Assert.IsTrue(element.Text.Contains("There is already an account with this email address."), "Error message not displayed as expected.");
-        }
 
-
-
+        // Login Page
         [TestMethod]
         public void Valid_Login_Test_Case()
         {
-            login.Login(baseUrl, emailToUse, "Na1matKhan");
-           
+            login.Login(BasePage.baseUrl, BasePage.emailToUse, "Na1matKhan");
+           Thread.Sleep(1000);
             string result = BasePage.driver.FindElement(By.ClassName("logged-in")).Text;
             Assert.AreEqual(result, "Welcome, naimat naimat!");
         }
 
+
+        // MyAccountPage
         [TestMethod]
         public void UpdatePassword()
         {
             string currentPassword = "Na1matKhan";
             string newPassword = "Na1matKhan";
-            login.Login(baseUrl, emailToUse, "Na1matKhan");
+            login.Login(BasePage.baseUrl, BasePage.emailToUse, "Na1matKhan");
             account.GotoAccountPage();
             account.ChangePassword(currentPassword, newPassword);
 
-            login.Login(baseUrl, emailToUse, newPassword);
+            login.Login(BasePage.baseUrl, BasePage.emailToUse, newPassword);
             string result = BasePage.driver.FindElement(By.ClassName("logged-in")).Text;
             Assert.AreEqual(result, "Welcome, naimat naimat!");
         }
 
-        [TestMethod]
-        public void AddAdditionalAdress()
-        {
-            string phone = "12345";
-            string add = "House 22";
-            string city = "karachi";
-            string province = "Alaska";
-            string code = "12345";
-            string country = "United States";
-            login.Login(baseUrl, emailToUse, "Na1matKhan");
-            account.GotoAccountPage();
-            account.AddAddress(phone, add, city, province, code, country);
-            string result = BasePage.GetText(By.CssSelector("td[data-th='City']"));
-            Assert.AreEqual(city, result);
-        }
+
+
+        // MyOrdersPage
 
         [TestMethod]
-        public void TestViewOrderById()
+        public void TestViewAllOrders()
         {
-
-            string orderId = "000028951";
-            login.Login(baseUrl, emailToUse, "Na1matKhan");
+            login.Login(BasePage.baseUrl, BasePage.emailToUse, "Na1matKhan");
             account.GotoAccountPage();
-            account.ViewOrderById();
-            string orderNumberOnPage = BasePage.GetText(By.CssSelector("span.base"));
-            string extractedOrderNumber = orderNumberOnPage.Replace("Order # ", "").Trim();
-            Assert.AreEqual(orderId, extractedOrderNumber, $"The order ID on the details page should be {orderId}.");
+            orders.ViewAllOrders();
+            Assert.IsTrue(BasePage.driver.Url.Contains("sales/order/history"), "Failed to navigate to the orders history page.");
         }
 
+        // MyWishlistPage
         [TestMethod]
         public void AddItemtoCartfromWishListPage()
         {
-            login.Login(baseUrl, emailToUse, "Na1matKhan");
+            login.Login(BasePage.baseUrl, BasePage.emailToUse, "Na1matKhan");
             account.GotoAccountPage();
-            account.AddAllItemtoCart();
-            Assert.IsTrue(account.IsWishlistEmpty());
+            wishlists.AddAllItemtoCart();
+            Assert.IsTrue(wishlists.IsWishlistEmpty());
         }
 
-        [TestMethod]
-        public void ShareWishList()
-        {
-            login.Login(baseUrl, emailToUse, "Na1matKhan");
-            account.GotoAccountPage();
-            account.SendWishlist(emailToUse, "Hello");
-            string result = BasePage.GetText(By.XPath("//div[text()='Your wish list has been shared.']"));
-            Assert.AreEqual(result, "Your wish list has been shared.");
-        }
-
-        [TestMethod]
-        public void AddReviewTestCase()
-        {
-            string summary = "Good";
-            string description = "Nice Product";
-
-            login.Login(baseUrl, emailToUse, "Na1matKhan");
-            account.GotoAccountPage();
-            account.AddReviewtoProduct(summary, description);
-            string result = BasePage.GetText(By.XPath("//div[contains(text(),'You submitted your review for moderation.')]"));
-            Assert.AreEqual(result, "You submitted your review for moderation.");
-
-        }
-
-
+        // ProductPage
         [TestMethod]
         public void Valid_Order_Placement()
         {
@@ -195,17 +153,5 @@ namespace Magento
             Assert.AreEqual(ProductName_1, retrieved_product1_name);
             Assert.AreEqual(ProductName_2, retrieved_product2_name);
         }
-        [TestMethod]
-        public void Valid_Add_to_Wishlist()
-        {
-            login.Login("https://magento.softwaretestingboard.com/customer/account/login/", "fegom47501@kindomd.com", "Na1matKhan");
-            string Product_Name = "Proteus Fitness Jackshirt";
-            By wishlist_product_name = By.XPath("/html/body/div[2]/main/div[2]/div[1]/form/div[1]/ol/li/div/strong/a");
-            product.Add_to_Wishlist(Product_Name);
-            string retrieve_product_name = BasePage.driver.FindElement(wishlist_product_name).Text;
-            Assert.AreEqual(retrieve_product_name, Product_Name);
-
-        }
-
     }
 }

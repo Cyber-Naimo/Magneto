@@ -15,6 +15,8 @@ namespace Magento
     public class BasePage
     {
         public static IWebDriver driver;
+        public static string baseUrl = "https://magento.softwaretestingboard.com";
+        public static string emailToUse = "remain-dear@x8xnajkk.mailosaur.net";
 
         public static void SeleniumInit(string browser)
         {

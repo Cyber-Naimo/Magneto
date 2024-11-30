@@ -134,13 +134,14 @@
   <ItemGroup>
     <Compile Include="BasePage.cs" />
     <Compile Include="ExecutionPage.cs" />
-    <Compile Include="Magento\Cart.cs" />
-    <Compile Include="Magento\Checkout.cs" />
+    <Compile Include="Magento\CartPage.cs" />
+    <Compile Include="Magento\CheckoutPage.cs" />
     <Compile Include="Magento\ForgetPasswordPage.cs" />
-    <Compile Include="Magento\Inventory.cs" />
     <Compile Include="Magento\LoginPage.cs" />
     <Compile Include="Magento\MyAccountPage.cs" />
-    <Compile Include="Magento\Product.cs" />
+    <Compile Include="Magento\MyOrdersPage.cs" />
+    <Compile Include="Magento\MyWishlistPage.cs" />
+    <Compile Include="Magento\ProductPage.cs" />
     <Compile Include="Magento\RegisterPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

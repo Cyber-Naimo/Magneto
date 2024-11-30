@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Magento.Magento
 {
-    internal class Checkout : BasePage
+    internal class CheckoutPage : BasePage
     {
         #region Locators
         By cart_icon = By.XPath("/html/body/div[2]/header/div[2]/div[1]");
