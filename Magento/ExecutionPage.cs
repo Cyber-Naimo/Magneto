@@ -17,15 +17,6 @@ namespace Magento
     [TestClass]
     public class ExecutionPage
     {
-
-        public static string baseUrl = "https://magento.softwaretestingboard.com";
-        public static string emailToUse = "leaf-atomic@6murhqca.mailosaur.net";
-        public static string name = "naimat";
-        public static string pass = "Na1matKhan";
-        public static string apiKey = "Bk0aQVHFQZ8MbxUTtTKe6V1AHOpebohy";
-        public static string serverId = "6murhqca";
-
-
         #region Setup and Cleanups
         public TestContext instance;
         public  TestContext TestContext
@@ -99,44 +90,58 @@ namespace Magento
 
         // Login Page
         [TestMethod]
-       // [TestCategory("FlowTest")]
-        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML","Data.xml", "Valid_Login_Test_Case",DataAccessMethod.Sequential)]
         public void Valid_Login_Test_Case()
         {
-            string url = TestContext.DataRow["url"].ToString();
-            string email = TestContext.DataRow["email"].ToString();
-            string password = TestContext.DataRow["password"].ToString();
-            login.Login(url, email, password);
-            //login.Login(BasePage.baseUrl, BasePage.emailToUse, "Na1matKhan");
-            Thread.Sleep(1000);
-           string result = BasePage.driver.FindElement(By.ClassName("logged-in")).Text;
-           Assert.AreEqual(result, "Welcome, naimat naimat!");
+            var testData = XmlHelper.ReadXmlData("TestData.xml", "Valid_Login_Test_Case");
+            
+            foreach (var item in testData)
+            {
+                string url = item["BaseUrl"];
+                string email = item["Email"];
+                string password = item["Password"];
+                login.Login(url, email, password);
+                WebDriverWait wait = new WebDriverWait(BasePage.driver, TimeSpan.FromSeconds(10));
+                IWebElement passwordReset = wait.Until(driver => driver.FindElement(By.ClassName("logged-in")));
+                string result = passwordReset.Text;
+                Assert.AreEqual(result, item["ExpectedText"]);
+            }
         }
 
         [TestMethod]
 
         public void Forget_Password_Test_Case()
         {
-            login.ForgotPass(baseUrl);
-            forgetPassword.SubmitForgotPassword(emailToUse);
+            var testData = XmlHelper.ReadXmlData("TestData.xml", "Forget_Password_Test_Case");
 
-            var mailosaur = new MailosaurClient(apiKey);
-
-            // Wait for an email to arrive, matching this search criteria
-            var criteria = new SearchCriteria()
+            foreach (var item in testData)
             {
-                SentTo = emailToUse
-            };
-            var email = mailosaur.Messages.Get(serverId, criteria);
-            var resetLink = email.Html.Links[1].Href;
+                string url = item["BaseUrl"];
+                string mail = item["Email"];
+                string password = item["Password"];
+                string apiKey = item["ApiKey"];
+                string serverId = item["ServerId"];
 
-            forgetPassword.Reset(resetLink, pass, pass);
+                login.ForgotPass(url);
+                forgetPassword.SubmitForgotPassword(mail);
 
-            WebDriverWait wait = new WebDriverWait(BasePage.driver, TimeSpan.FromSeconds(10));
-            IWebElement passwordReset = wait.Until(driver => driver.FindElement(By.XPath("//*[@id=\"maincontent\"]/div[2]/div[2]/div/div/div")));
-            string result = passwordReset.Text;
+                var mailosaur = new MailosaurClient(apiKey);
 
-            Assert.AreEqual(result, "You updated your password.");
+                // Wait for an email to arrive, matching this search criteria
+                var criteria = new SearchCriteria()
+                {
+                    SentTo = mail
+                };
+                var email = mailosaur.Messages.Get(serverId, criteria);
+                var resetLink = email.Html.Links[1].Href;
+
+                forgetPassword.Reset(resetLink, password, password);
+
+                WebDriverWait wait = new WebDriverWait(BasePage.driver, TimeSpan.FromSeconds(10));
+                IWebElement passwordReset = wait.Until(driver => driver.FindElement(By.XPath("//*[@id=\"maincontent\"]/div[2]/div[2]/div/div/div")));
+                string result = passwordReset.Text;
+
+                Assert.AreEqual(result, item["ExpectedMessage"]);
+            }
         }
 
 
