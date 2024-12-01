@@ -49,6 +49,7 @@ namespace Magento.Magento
 
         public void AddAddress(string phone, string addr, string city, string province, string zip_code, string country)
         {
+            Step = Test.CreateNode("AccountPage");
             Click(manageAddressesLink);
             Click(addNewAddressButton);
             Write(phone_tag, phone);
@@ -65,11 +66,14 @@ namespace Magento.Magento
 
         public void GotoAccountPage()
         {
+            Step = Test.CreateNode("AccountPage");
             Click(switchButton);
             Click(myAccountLink);
         }
         public void ChangePassword(string currentPassword, string newPassword)
         {
+            Step = Test.CreateNode("AccountPage");
+
             Click(changePasswordLink);
 
             Write(currentPasswordField, currentPassword);
@@ -85,6 +89,7 @@ namespace Magento.Magento
 
         public void ViewAllReviews()
         {
+            Step = Test.CreateNode("AccountPage");
             Click(view_review);
         }
 

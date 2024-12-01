@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="76a93add-e3d2-4d89-adcd-ea69aa7f9792" name="Hashmat@DESKTOP-R2P4LJE 2024-12-01 11:34:40" runUser="DESKTOP-R2P4LJE\Hashmat" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2024-12-01T11:34:40.9829873+05:00" queuing="2024-12-01T11:34:40.9829873+05:00" start="2024-12-01T11:34:09.2284983+05:00" finish="2024-12-01T11:35:54.9135848+05:00" />
+  <TestSettings name="default" id="98007559-9142-4feb-937c-cd66830b1b72">
+    <Deployment runDeploymentRoot="Hashmat_DESKTOP-R2P4LJE_2024-12-01_11_34_40" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="50ef2565-fff4-44fa-9983-fb09edc105b3" testId="46bb7ad6-8925-5a1f-ade8-343a48ddc5df" testName="ValidRegisterTestCase" computerName="DESKTOP-R2P4LJE" duration="00:00:31.1211723" startTime="2024-12-01T11:34:09.7325175+05:00" endTime="2024-12-01T11:34:40.9559910+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="50ef2565-fff4-44fa-9983-fb09edc105b3">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Magento.ExecutionPage.ValidRegisterTestCase threw exception: &#xD;
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>    at Magento.BasePage.TakeScreenshots(Status status, String stepDetails) in C:\Users\Hashmat\source\repos\Magento\Magento\BasePage.cs:line 96&#xD;
+   at Magento.BasePage.Click(By by) in C:\Users\Hashmat\source\repos\Magento\Magento\BasePage.cs:line 68&#xD;
+   at Magento.Magento.RegisterPage.Signup(String url, String first_name, String last_name, String email, String password, String conf_password) in C:\Users\Hashmat\source\repos\Magento\Magento\Magento\RegisterPage.cs:line 29&#xD;
+   at Magento.ExecutionPage.ValidRegisterTestCase() in C:\Users\Hashmat\source\repos\Magento\Magento\ExecutionPage.cs:line 79&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="42a7ae81-3a2c-4814-b9f5-33317d6e8ffa" testId="4a302077-fc5b-ae0a-55fe-471133557d50" testName="UpdatePassword" computerName="DESKTOP-R2P4LJE" duration="00:00:31.3595046" startTime="2024-12-01T11:34:40.9779996+05:00" endTime="2024-12-01T11:35:12.3380084+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="42a7ae81-3a2c-4814-b9f5-33317d6e8ffa" />
+    <UnitTestResult executionId="8fc1fd18-807f-41ce-b08d-7e226d440bc7" testId="dea0ff67-c341-05fc-fa8f-800a68e6c24b" testName="AddItemtoCartfromWishListPage" computerName="DESKTOP-R2P4LJE" duration="00:00:18.5424696" startTime="2024-12-01T11:35:28.9636201+05:00" endTime="2024-12-01T11:35:54.0691242+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8fc1fd18-807f-41ce-b08d-7e226d440bc7" />
+    <UnitTestResult executionId="e420e0e1-f5b5-4f0f-9822-f39dce779be5" testId="358e7f92-9e51-b932-d1b0-9557d28f6117" testName="TestViewAllOrders" computerName="DESKTOP-R2P4LJE" duration="00:00:16.6244713" startTime="2024-12-01T11:35:12.3380084+05:00" endTime="2024-12-01T11:35:28.9636201+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e420e0e1-f5b5-4f0f-9822-f39dce779be5" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="UpdatePassword" storage="c:\users\hashmat\source\repos\magento\magento\bin\debug\magento.dll" id="4a302077-fc5b-ae0a-55fe-471133557d50">
+      <TestCategory>
+        <TestCategoryItem TestCategory="FlowTest" />
+      </TestCategory>
+      <Execution id="42a7ae81-3a2c-4814-b9f5-33317d6e8ffa" />
+      <TestMethod codeBase="C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Magento.dll" adapterTypeName="executor://mstestadapter/v2" className="Magento.ExecutionPage" name="UpdatePassword" />
+    </UnitTest>
+    <UnitTest name="TestViewAllOrders" storage="c:\users\hashmat\source\repos\magento\magento\bin\debug\magento.dll" id="358e7f92-9e51-b932-d1b0-9557d28f6117">
+      <TestCategory>
+        <TestCategoryItem TestCategory="FlowTest" />
+      </TestCategory>
+      <Execution id="e420e0e1-f5b5-4f0f-9822-f39dce779be5" />
+      <TestMethod codeBase="C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Magento.dll" adapterTypeName="executor://mstestadapter/v2" className="Magento.ExecutionPage" name="TestViewAllOrders" />
+    </UnitTest>
+    <UnitTest name="ValidRegisterTestCase" storage="c:\users\hashmat\source\repos\magento\magento\bin\debug\magento.dll" id="46bb7ad6-8925-5a1f-ade8-343a48ddc5df">
+      <TestCategory>
+        <TestCategoryItem TestCategory="FlowTest" />
+      </TestCategory>
+      <Execution id="50ef2565-fff4-44fa-9983-fb09edc105b3" />
+      <TestMethod codeBase="C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Magento.dll" adapterTypeName="executor://mstestadapter/v2" className="Magento.ExecutionPage" name="ValidRegisterTestCase" />
+    </UnitTest>
+    <UnitTest name="AddItemtoCartfromWishListPage" storage="c:\users\hashmat\source\repos\magento\magento\bin\debug\magento.dll" id="dea0ff67-c341-05fc-fa8f-800a68e6c24b">
+      <TestCategory>
+        <TestCategoryItem TestCategory="FlowTest" />
+      </TestCategory>
+      <Execution id="8fc1fd18-807f-41ce-b08d-7e226d440bc7" />
+      <TestMethod codeBase="C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Magento.dll" adapterTypeName="executor://mstestadapter/v2" className="Magento.ExecutionPage" name="AddItemtoCartfromWishListPage" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="46bb7ad6-8925-5a1f-ade8-343a48ddc5df" executionId="50ef2565-fff4-44fa-9983-fb09edc105b3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4a302077-fc5b-ae0a-55fe-471133557d50" executionId="42a7ae81-3a2c-4814-b9f5-33317d6e8ffa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dea0ff67-c341-05fc-fa8f-800a68e6c24b" executionId="8fc1fd18-807f-41ce-b08d-7e226d440bc7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="358e7f92-9e51-b932-d1b0-9557d28f6117" executionId="e420e0e1-f5b5-4f0f-9822-f39dce779be5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="4" executed="4" passed="3" failed="1" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET Framework 4.8.9282.0)&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Magento.Magento
 {
-    internal class LoginPage : BasePage
+    public class LoginPage : BasePage
     {
         #region Locators
         By header_Sign_in_link = By.LinkText("Sign In");
@@ -22,6 +22,7 @@ namespace Magento.Magento
         #region Methods
         public void Login(string url, string email, string password)
         {
+            Step = Test.CreateNode("LoginPage");
             Url(url);
             Click(header_Sign_in_link);
             Write(email_tag, email);

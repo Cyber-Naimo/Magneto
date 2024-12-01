@@ -42,17 +42,21 @@ namespace Magento.Magento
         #region Methods
         public void AddAllItemtoCart()
         {
+            Step = Test.CreateNode("MyWishlistPage");
             Click(myWishListLink);
+            Thread.Sleep(1000);
             Click(addtocart_tag);
 
         }
         public bool IsWishlistEmpty()
         {
+            Step = Test.CreateNode("MyWishlistPage");
             return driver.FindElement(wishlistEmptyMessage).Displayed;
         }
 
         public void SendWishlist(string emails, string message)
         {
+            Step = Test.CreateNode("MyWishlistPage");
             Click(myWishListLink);
             Thread.Sleep(5000);
             Click(shareWishlistButton);
@@ -63,6 +67,7 @@ namespace Magento.Magento
 
         public void ClickRatingStars()
         {
+            Step = Test.CreateNode("MyWishlistPage");
             try
             {
                 // Find the rating star element (for example, the 5-star rating)
@@ -87,6 +92,7 @@ namespace Magento.Magento
 
         public void AddReviewtoProduct(string summary, string detail)
         {
+            Step = Test.CreateNode("MyWishlistPage");
             Click(myWishListLink);
             Click(specificReviewLink);
 

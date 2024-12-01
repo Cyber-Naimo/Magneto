@@ -25,6 +25,7 @@ namespace Magento.Magento
         #region Methods
         public void Signup(string url, string first_name, string last_name, string email, string password, string conf_password)
         {
+            Step = Test.CreateNode("RegisterPage");
             Url(url);
             Click(header_Sign_up_link);
             Write(first_name_tag, first_name);
