@@ -8,12 +8,24 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Mailosaur;
+using Mailosaur.Models;
+using OpenQA.Selenium.Support.UI;
 
 namespace Magento
 {
     [TestClass]
     public class ExecutionPage
     {
+
+        public static string baseUrl = "https://magento.softwaretestingboard.com";
+        public static string emailToUse = "leaf-atomic@6murhqca.mailosaur.net";
+        public static string name = "naimat";
+        public static string pass = "Na1matKhan";
+        public static string apiKey = "Bk0aQVHFQZ8MbxUTtTKe6V1AHOpebohy";
+        public static string serverId = "6murhqca";
+
+
         #region Setup and Cleanups
         public TestContext instance;
         public  TestContext TestContext
@@ -25,7 +37,7 @@ namespace Magento
         [AssemblyInitialize()]
         public static void AssemblyInitialize(TestContext context)
         {
-            string resultFile = @"C:\Users\Hashmat\source\repos\Magento\ExtentReports\Execution_log_" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".html";
+            string resultFile = @"E:\University\sem7\Software Testing\project\Magneto\ExtentReports\Execution_log_" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".html";
             BasePage.CreateReport(resultFile);
         }
 
@@ -52,6 +64,7 @@ namespace Magento
 
         LoginPage login = new LoginPage();
         RegisterPage register = new RegisterPage();
+        ForgetPasswordPage forgetPassword = new ForgetPasswordPage();
         ProductPage product = new ProductPage();
         CartPage cart = new CartPage();
         CheckoutPage checkout = new CheckoutPage();
@@ -98,6 +111,32 @@ namespace Magento
             Thread.Sleep(1000);
            string result = BasePage.driver.FindElement(By.ClassName("logged-in")).Text;
            Assert.AreEqual(result, "Welcome, naimat naimat!");
+        }
+
+        [TestMethod]
+
+        public void Forget_Password_Test_Case()
+        {
+            login.ForgotPass(baseUrl);
+            forgetPassword.SubmitForgotPassword(emailToUse);
+
+            var mailosaur = new MailosaurClient(apiKey);
+
+            // Wait for an email to arrive, matching this search criteria
+            var criteria = new SearchCriteria()
+            {
+                SentTo = emailToUse
+            };
+            var email = mailosaur.Messages.Get(serverId, criteria);
+            var resetLink = email.Html.Links[1].Href;
+
+            forgetPassword.Reset(resetLink, pass, pass);
+
+            WebDriverWait wait = new WebDriverWait(BasePage.driver, TimeSpan.FromSeconds(10));
+            IWebElement passwordReset = wait.Until(driver => driver.FindElement(By.XPath("//*[@id=\"maincontent\"]/div[2]/div[2]/div/div/div")));
+            string result = passwordReset.Text;
+
+            Assert.AreEqual(result, "You updated your password.");
         }
 
 

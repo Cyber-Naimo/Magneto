@@ -37,6 +37,7 @@ namespace Magento.Magento
 
         public void ForgotPass(string url)
         {
+            Step = Test.CreateNode("LoginPage");
             Url(url);
             Click(header_Sign_in_link);
             Click(forget_pass_btn);
