@@ -42,9 +42,10 @@ namespace Magento.Magento
 
         #endregion
 
-
-
+        #region Objects
         LoginPage login = new LoginPage();
+        #endregion
+
         #region Methods
 
         public void AddAddress(string phone, string addr, string city, string province, string zip_code, string country)

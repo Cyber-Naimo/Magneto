@@ -30,10 +30,6 @@ namespace Magento.Magento
         By widget_product_wishlist_btn = By.XPath("/html/body/div[2]/main/div[2]/div/div[1]/div[5]/div/a[1]");
         #endregion
 
-
-        
-
-
         #region Methods
         public void Add_to_Cart(string url)
         {

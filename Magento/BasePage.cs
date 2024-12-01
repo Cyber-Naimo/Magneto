@@ -12,12 +12,17 @@ namespace Magento
     [TestClass]
     public class BasePage
     {
+        #region Variables
         public static IWebDriver driver;
         public static string baseUrl = "https://magento.softwaretestingboard.com";
         public static string emailToUse = "remain-dear@x8xnajkk.mailosaur.net";
         public static ExtentReports extentReports;
         public static ExtentTest Test;
         public static ExtentTest Step;
+        #endregion
+
+
+        #region Methods
         public static void SeleniumInit(string browser)
         {
             if (browser == "Chrome")
@@ -96,5 +101,6 @@ namespace Magento
             Step.Log(status,stepDetails,MediaEntityBuilder.CreateScreenCaptureFromPath(path).Build());
 
         }
+        #endregion
     }
 }
