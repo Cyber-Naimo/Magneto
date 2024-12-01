@@ -48,7 +48,6 @@ namespace Magento
         }
         #endregion
 
-
         #region Objects
 
         LoginPage login = new LoginPage();
@@ -61,6 +60,8 @@ namespace Magento
         MyWishlistPage wishlists = new MyWishlistPage();
 
         #endregion
+
+        #region Methods
 
         // RegisterPage
         [TestMethod]
@@ -165,7 +166,8 @@ namespace Magento
 
         // ProductPage
         [TestMethod]
-       // [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "|DataDirectory|\\Data.xml", "Valid_Order_Placement_Test_Case", DataAccessMethod.Sequential)]
+        [TestCategory("FlowTest")]
+        // [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "|DataDirectory|\\Data.xml", "Valid_Order_Placement_Test_Case", DataAccessMethod.Sequential)]
         public void Valid_Order_Placement()
         {
             //string productUrl = TestContext.DataRow["productUrl"].ToString();
@@ -180,7 +182,8 @@ namespace Magento
         }
 
         [TestMethod]
-       // [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "|DataDirectory|\\Data.xml", "Valid_Update_Cart_Test_Case", DataAccessMethod.Sequential)]
+        [TestCategory("FlowTest")]
+        // [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "|DataDirectory|\\Data.xml", "Valid_Update_Cart_Test_Case", DataAccessMethod.Sequential)]
         public void Valid_Update_Cart()
         {
             By piece_price_txt = By.XPath("/html/body/div[2]/main/div[3]/div/div[2]/form/div[1]/table/tbody/tr[1]/td[2]/span/span/span");
@@ -201,6 +204,7 @@ namespace Magento
 
         }   
         [TestMethod]
+        [TestCategory("FlowTest")]
         //[DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "|DataDirectory|\\Data.xml", "Valid_Compare_Products_Test_Case", DataAccessMethod.Sequential)]
         public void Valid_Compare_products()
         {
@@ -225,5 +229,6 @@ namespace Magento
             Assert.AreEqual(ProductName_1, retrieved_product1_name);
             Assert.AreEqual(ProductName_2, retrieved_product2_name);
         }
+        #endregion
     }
 }

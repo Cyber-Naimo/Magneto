@@ -23,11 +23,11 @@ namespace Magento.Magento
         By phone_number_input_text = By.XPath("/html/body/div[2]/main/div[2]/div/div[2]/div[4]/ol/li[1]/div[2]/form[2]/div/div[9]/div/input");
         By shipping_method_input_btn = By.XPath("/html/body/div[2]/main/div[2]/div/div[2]/div[4]/ol/li[2]/div/div[3]/form/div[1]/table/tbody/tr/td[1]/input");
         By next_btn = By.CssSelector("#shipping-method-buttons-container > div > button");
-        By place_order_btn = By.CssSelector("#checkout-payment-method-load > div > div > div.payment-method._active > div.payment-method-content > div.actions-toolbar > div > button");
+        By placeOrderBtn = By.CssSelector("span[data-bind=\"i18n: 'Place Order'\"]");
 
         #endregion
 
-        #region data
+        #region Data
         string email = "tempmail12@gmail.com";
         string fname = "Qasim";
         string lname = "Panhwar";
@@ -38,6 +38,7 @@ namespace Magento.Magento
         string phone_number = "03123456789";
         #endregion
 
+        #region Method
         public void checkout()
         {
             Step = Test.CreateNode("CheckoutPage");
@@ -58,14 +59,12 @@ namespace Magento.Magento
             Thread.Sleep(4000);
             Click(shipping_method_input_btn);
             Click(next_btn);
-            Thread.Sleep(4000);
-            Click(place_order_btn);
-            Thread.Sleep(4000);
-
-
+            Thread.Sleep(6000);
+            Click(placeOrderBtn);
+            Thread.Sleep(5000);
         }
 
-
+        #endregion
 
     }
 }

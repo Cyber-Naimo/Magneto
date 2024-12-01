@@ -32,12 +32,13 @@ namespace Magento.Magento
         By summary_tag = By.Id("summary_field");
         By description = By.Name("detail");
         By submitReviewButton = By.CssSelector("button.action.submit.primary");
-        #endregion 
+        #endregion
 
+        #region Objects
         LoginPage login = new LoginPage();
         MyAccountPage account = new MyAccountPage();
         ProductPage product = new ProductPage();
-
+        #endregion
 
         #region Methods
         public void AddAllItemtoCart()
