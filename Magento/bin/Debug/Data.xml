@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Tests>
+	
+	
+	<Valid_Register_Test_Case>
+		<url>https://magento.softwaretestingboard.com</url>
+		<firstName>naimat</firstName>
+		<lastName>naimat</lastName>
+		<email>remain-dear@x8xnajkk.mailosaur.net</email>
+		<password>Na1matKhan</password>
+		<confirmPassword>Na1matKhan</confirmPassword>
+	</Valid_Register_Test_Case>
+	
+	
+	<Valid_Login_Test_Case>
+		<url>https://magento.softwaretestingboard.com</url>
+		<email>remain-dear@x8xnajkk.mailosaur.net</email>
+		<password>Na1matKhan</password>
+	</Valid_Login_Test_Case>
+	
+	
+	<Update_Password_Test_Case>
+		<url>https://magento.softwaretestingboard.com</url>
+		<email>remain-dear@x8xnajkk.mailosaur.net</email>
+		<password>Na1matKhan</password>
+		<currentPassword>Na1matKhan</currentPassword>
+		<newPassword>NewPassword123</newPassword>
+	</Update_Password_Test_Case>
+	<View_All_Orders_Test_Case>
+		<url>https://magento.softwaretestingboard.com</url>
+		<email>remain-dear@x8xnajkk.mailosaur.net</email>
+		<password>Na1matKhan</password>	
+	</View_All_Orders_Test_Case>
+	
+	<Add_Item_To_Cart_From_Wishlist_Test_Case>
+		<url>https://magento.softwaretestingboard.com</url>
+		<email>remain-dear@x8xnajkk.mailosaur.net</email>
+		<password>Na1matKhan</password>
+	</Add_Item_To_Cart_From_Wishlist_Test_Case>
+
+	<Valid_Order_Placement_Test_Case>
+		<productUrl>https://magento.softwaretestingboard.com/</productUrl>
+		<expectedConfirmationText>Thank you for your purchase!</expectedConfirmationText>
+	</Valid_Order_Placement_Test_Case>
+
+	<Valid_Update_Cart_Test_Case>
+		<productUrl>https://magento.softwaretestingboard.com/</productUrl>
+		<quantity>3</quantity>
+	</Valid_Update_Cart_Test_Case>
+
+	<Valid_Compare_Products_Test_Case>
+		<url>https://magento.softwaretestingboard.com</url>
+		<email>remain-dear@x8xnajkk.mailosaur.net</email>
+		<password>Na1matKhan</password>
+		<ProductName1>Proteus Fitness Jackshirt</ProductName1>
+		<ProductName2>Argus All-Weather Tank</ProductName2>
+	</Valid_Compare_Products_Test_Case>
+</Tests>

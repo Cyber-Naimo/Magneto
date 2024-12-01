@@ -21,6 +21,7 @@ namespace Magento.Magento
 
         public void UpdateCart(int quantity)
         {
+            Step = Test.CreateNode("CartPage");
             Thread.Sleep(2000);
             Click(cart_icon);
             Thread.Sleep(2000);

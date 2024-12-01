@@ -37,6 +37,7 @@ namespace Magento.Magento
         #region Methods
         public void Add_to_Cart(string url)
         {
+            Step = Test.CreateNode("ProductPage");
             Url(url);
             Thread.Sleep(2000);
             Click(category_men);
@@ -66,6 +67,7 @@ namespace Magento.Magento
 
         public void Add_to_Wishlist(string Product_Name)
         {
+            Step = Test.CreateNode("ProductPage");
             if (Search_Product(Product_Name))
             {
                 Click(search_product_widget);
@@ -77,6 +79,7 @@ namespace Magento.Magento
 
         public bool Search_Product(string Product_Name)
         {
+            Step = Test.CreateNode("ProductPage");
             Write(search_product_input_field, Product_Name);
             Click(searb_product_btn);
             Thread.Sleep(3000);
@@ -90,7 +93,7 @@ namespace Magento.Magento
 
         public void Compare_Products(string ProductName_1, string ProductName_2)
         {
-
+            Step = Test.CreateNode("ProductPage");
             if (Search_Product(ProductName_1))
             {
                 Click(search_product_widget);

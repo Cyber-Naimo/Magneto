@@ -25,12 +25,14 @@ namespace Magento.Magento
         MyAccountPage account = new MyAccountPage();    
         public void ViewOrderById()
         {
+            Step = Test.CreateNode("OrdersPage");
             Click(myOrderLink);
             Click(ViewOrderLink);
         }
 
         public void ViewAllOrders()
         {
+            Step = Test.CreateNode("OrdersPage");
             Click(view_orders);
         }
 

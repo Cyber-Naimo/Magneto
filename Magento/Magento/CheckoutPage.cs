@@ -40,7 +40,7 @@ namespace Magento.Magento
 
         public void checkout()
         {
-
+            Step = Test.CreateNode("CheckoutPage");
             Thread.Sleep(2000);
             Click(cart_icon);
             Thread.Sleep(2000);
