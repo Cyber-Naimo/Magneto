@@ -1,5 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <TestData>
+	<Valid_Register_Test_Case>
+		<TestCase>
+			<BaseUrl>https://magento.softwaretestingboard.com</BaseUrl>
+			<FirstName>Naimat</FirstName>
+			<LastName>Khan</LastName>
+			<Email>leaf-atomic@6murhqca.mailosaur.net</Email>
+			<Password>Na1matKhan</Password>
+			<ConfirmPassword>Na1matKhan</ConfirmPassword>
+			<ExpectedText>My Account</ExpectedText>
+		</TestCase>
+	</Valid_Register_Test_Case>
+	
 	<Valid_Login_Test_Case>
 		<TestCase>
 			<BaseUrl>https://magento.softwaretestingboard.com</BaseUrl>
@@ -8,11 +20,65 @@
 			<ExpectedText>Welcome, naimat naimat!</ExpectedText>
 		</TestCase>
 	</Valid_Login_Test_Case>
+	
 	<Forget_Password_Test_Case>
 		<TestCase>
 			<BaseUrl>https://magento.softwaretestingboard.com</BaseUrl>
 			<Email>leaf-atomic@6murhqca.mailosaur.net</Email>
+			<Password>Na1matKhan</Password>
+			<ApiKey>Bk0aQVHFQZ8MbxUTtTKe6V1AHOpebohy</ApiKey>
+			<ServerId>6murhqca</ServerId>
 			<ExpectedMessage>You updated your password.</ExpectedMessage>
 		</TestCase>
 	</Forget_Password_Test_Case>
+
+	<Update_Password_Test_Case>
+		<TestCase>
+			<BaseUrl>https://magento.softwaretestingboard.com</BaseUrl>
+			<Email>leaf-atomic@6murhqca.mailosaur.net</Email>
+			<CurrentPassword>Na1matKhan</CurrentPassword>
+			<NewPassword>NewPassword123</NewPassword>
+			<ExpectedText>Welcome, naimat naimat!</ExpectedText>
+		</TestCase>
+	</Update_Password_Test_Case>
+
+	<View_All_Orders_Test_Case>
+		<TestCase>
+			<BaseUrl>https://magento.softwaretestingboard.com</BaseUrl>
+			<Email>leaf-atomic@6murhqca.mailosaur.net</Email>
+			<Password>Na1matKhan</Password>
+		</TestCase>
+	</View_All_Orders_Test_Case>
+
+	<Add_Item_To_Cart_From_Wishlist_Test_Case>
+		<TestCase>
+			<BaseUrl>https://magento.softwaretestingboard.com</BaseUrl>
+			<Email>leaf-atomic@6murhqca.mailosaur.net</Email>
+			<Password>Na1matKhan</Password>
+		</TestCase>
+	</Add_Item_To_Cart_From_Wishlist_Test_Case>
+
+	<Valid_Order_Placement_Test_Case>
+		<TestCase>
+			<ProductUrl>https://magento.softwaretestingboard.com/</ProductUrl>
+			<ExpectedConfirmationText>Thank you for your purchase!</ExpectedConfirmationText>
+		</TestCase>
+	</Valid_Order_Placement_Test_Case>
+
+	<Valid_Update_Cart_Test_Case>
+		<TestCase>
+			<ProductUrl>https://magento.softwaretestingboard.com/</ProductUrl>
+			<Quantity>3</Quantity>
+		</TestCase>
+	</Valid_Update_Cart_Test_Case>
+
+	<Valid_Compare_Products_Test_Case>
+		<TestCase>
+			<ProductName1>Proteus Fitness Jackshirt</ProductName1>
+			<ProductName2>Argus All-Weather Tank</ProductName2>
+			<Email>leaf-atomic@6murhqca.mailosaur.net</Email>
+			<Password>Na1matKhan</Password>
+		</TestCase>
+	</Valid_Compare_Products_Test_Case>
+	
 </TestData>

@@ -28,7 +28,7 @@ namespace Magento
         [AssemblyInitialize()]
         public static void AssemblyInitialize(TestContext context)
         {
-            string resultFile = @"E:\University\sem7\Software Testing\project\Magneto\ExtentReports\Execution_log_" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".html";
+            string resultFile = @"C:\Users\Hashmat\source\repos\Magento\ExtentReports\Execution_log_" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".html";
             BasePage.CreateReport(resultFile);
         }
 
@@ -62,34 +62,47 @@ namespace Magento
         MyAccountPage account = new MyAccountPage();
         MyOrdersPage orders = new MyOrdersPage();
         MyWishlistPage wishlists = new MyWishlistPage();
+        
 
         #endregion
 
         #region Methods
 
-        // RegisterPage
+        
+        
         [TestMethod]
         [TestCategory("FlowTest")]
-        // [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "|DataDirectory|\\Data.xml", "Valid_Register_Test_Case", DataAccessMethod.Sequential)]
         public void ValidRegisterTestCase()
         {
-            //string url = TestContext.DataRow["url"].ToString();
-            //string firstName = TestContext.DataRow["firstName"].ToString();
-            //string lastName = TestContext.DataRow["lastName"].ToString();
-            //string email = TestContext.DataRow["email"].ToString();
-            //string password = TestContext.DataRow["password"].ToString();
-            //string confirmPassword = TestContext.DataRow["confirmPassword"].ToString();
-            //register.Signup(BasePage.baseUrl, firstName, lastName, email, password, confirmPassword);
+            var testData = XmlHelper.ReadXmlData("TestData.xml", "Valid_Register_Test_Case");
 
-            register.Signup(BasePage.baseUrl, "naimat", "naimat", BasePage.emailToUse, "Na1matKhan", "Na1matKhan");
-            string result = BasePage.driver.FindElement(By.ClassName("base")).Text;
-            //Assert.AreEqual(result, "My Account");
-            Assert.AreEqual(result, "Create New Customer Account");
+            foreach (var item in testData)
+            {
+                string url = item["BaseUrl"];
+                string firstName = item["FirstName"];
+                string lastName = item["LastName"];
+                string email = item["Email"];
+                string password = item["Password"];
+                string confirmPassword = item["ConfirmPassword"];
+                string expectedText = item["ExpectedText"];
+
+                // Perform the registration
+                register.Signup(url, firstName, lastName, email, password, confirmPassword);
+
+                // Wait for the page to load and verify the result
+                WebDriverWait wait = new WebDriverWait(BasePage.driver, TimeSpan.FromSeconds(10));
+                IWebElement confirmationMessage = wait.Until(driver => driver.FindElement(By.ClassName("base")));
+                string result = confirmationMessage.Text;
+
+                // Assert the expected result
+                Assert.AreEqual(result, expectedText);
+            }
         }
 
 
         // Login Page
         [TestMethod]
+        [TestCategory("FlowTest")]
         public void Valid_Login_Test_Case()
         {
             var testData = XmlHelper.ReadXmlData("TestData.xml", "Valid_Login_Test_Case");
@@ -108,7 +121,7 @@ namespace Magento
         }
 
         [TestMethod]
-
+        [TestCategory("FlowTest")]
         public void Forget_Password_Test_Case()
         {
             var testData = XmlHelper.ReadXmlData("TestData.xml", "Forget_Password_Test_Case");
@@ -146,31 +159,38 @@ namespace Magento
 
 
         // MyAccountPage
+
         [TestMethod]
         [TestCategory("FlowTest")]
-        //[DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "|DataDirectory|\\Data.xml", "Update_Password_Test_Case", DataAccessMethod.Sequential)]
-
         public void UpdatePassword()
         {
-            //string currentPassword = TestContext.DataRow["currentPassword"].ToString();
-            //string newPassword = TestContext.DataRow["newPassword"].ToString();
-            //string url = TestContext.DataRow["url"].ToString();
-            //string email = TestContext.DataRow["email"].ToString();
-            //string password = TestContext.DataRow["password"].ToString();
-            //login.Login(BasePage.baseUrl, BasePage.emailToUse, currentPassword);
+            var testData = XmlHelper.ReadXmlData("TestData.xml", "Update_Password_Test_Case");
 
-            login.Login(BasePage.baseUrl, BasePage.emailToUse, "Na1matKhan");
-            Thread.Sleep(1000);
-            account.GotoAccountPage();
-            //account.ChangePassword(currentPassword, newPassword);
-            account.ChangePassword("Na1matKhan","Na1matKhan");
+            foreach (var item in testData)
+            {
+                string url = item["BaseUrl"];
+                string email = item["Email"];
+                string currentPassword = item["CurrentPassword"];
+                string newPassword = item["NewPassword"];
+                string expectedText = item["ExpectedText"];
 
-            //login.Login(BasePage.baseUrl, BasePage.emailToUse, newPassword);
-            login.Login(BasePage.baseUrl, BasePage.emailToUse, "Na1matKhan");
-            Thread.Sleep(1000);
-            string result = BasePage.driver.FindElement(By.ClassName("logged-in")).Text;
-            Assert.AreEqual(result, "Welcome, naimat naimat!");
+                login.Login(url, email, currentPassword);
+
+                WebDriverWait wait = new WebDriverWait(BasePage.driver, TimeSpan.FromSeconds(10));
+                IWebElement loggedInElement = wait.Until(driver => driver.FindElement(By.ClassName("logged-in")));
+
+                account.GotoAccountPage();
+                account.ChangePassword(currentPassword, newPassword);
+
+                login.Login(url, email, newPassword);
+
+                IWebElement loggedInWithNewPassword = wait.Until(driver => driver.FindElement(By.ClassName("logged-in")));
+
+                string result = loggedInWithNewPassword.Text;
+                Assert.AreEqual(result, expectedText);
+            }
         }
+
 
 
 
@@ -178,101 +198,147 @@ namespace Magento
 
         [TestMethod]
         [TestCategory("FlowTest")]
-        //[DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "|DataDirectory|\\Data.xml", "View_All_Orders_Test_Case", DataAccessMethod.Sequential)]
         public void TestViewAllOrders()
         {
-            //string url = TestContext.DataRow["url"].ToString();
-            //string email = TestContext.DataRow["email"].ToString();
-            //string password = TestContext.DataRow["password"].ToString();
-            //login.Login(url, email, password);
-            login.Login(BasePage.baseUrl, BasePage.emailToUse, "Na1matKhan");
-            account.GotoAccountPage();
-            orders.ViewAllOrders();
-            Assert.IsTrue(BasePage.driver.Url.Contains("sales/order/history"), "Failed to navigate to the orders history page.");
+            var testData = XmlHelper.ReadXmlData("TestData.xml", "View_All_Orders_Test_Case");
+
+            foreach (var item in testData)
+            {
+                string url = item["BaseUrl"];
+                string email = item["Email"];
+                string password = item["Password"];
+
+                // Login with the provided credentials
+                login.Login(url, email, password);
+
+                // Navigate to the account page and view all orders
+                account.GotoAccountPage();
+                orders.ViewAllOrders();
+
+                // Verify if the URL contains the expected orders history page
+                Assert.IsTrue(BasePage.driver.Url.Contains("sales/order/history"), "Failed to navigate to the orders history page.");
+            }
         }
 
+
+
+
         // MyWishlistPage
+
         [TestMethod]
         [TestCategory("FlowTest")]
-        //[DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "|DataDirectory|\\Data.xml", "Add_Item_To_Cart_From_Wishlist_Test_Case", DataAccessMethod.Sequential)]
         public void AddItemtoCartfromWishListPage()
         {
-            //string url = TestContext.DataRow["url"].ToString();
-            //string email = TestContext.DataRow["email"].ToString();
-            //string password = TestContext.DataRow["password"].ToString();
-            //login.Login(url, email, password);
-            login.Login(BasePage.baseUrl, BasePage.emailToUse, "Na1matKhan");
-            Thread.Sleep(1000);
-            account.GotoAccountPage();
-            wishlists.AddAllItemtoCart();
-            Assert.IsTrue(wishlists.IsWishlistEmpty());
+            var testData = XmlHelper.ReadXmlData("TestData.xml", "Add_Item_To_Cart_From_Wishlist_Test_Case");
+
+            foreach (var item in testData)
+            {
+                string url = item["BaseUrl"];
+                string email = item["Email"];
+                string password = item["Password"];
+
+                // Login with the provided credentials
+                login.Login(url, email, password);
+
+                // Navigate to the account page
+                account.GotoAccountPage();
+
+                // Add items from the wishlist to the cart
+                wishlists.AddAllItemtoCart();
+
+                // Assert that the wishlist is empty after adding the items to the cart
+                Assert.IsTrue(wishlists.IsWishlistEmpty());
+            }
         }
+
+
+
 
         // ProductPage
         [TestMethod]
         [TestCategory("FlowTest")]
-        // [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "|DataDirectory|\\Data.xml", "Valid_Order_Placement_Test_Case", DataAccessMethod.Sequential)]
         public void Valid_Order_Placement()
         {
-            //string productUrl = TestContext.DataRow["productUrl"].ToString();
-            //string expectedConfirmationText = TestContext.DataRow["expectedConfirmationText"].ToString();
-            //product.Add_to_Cart(productUrl);
-            product.Add_to_Cart("https://magento.softwaretestingboard.com/");
-            checkout.checkout();
-            string assertion_txt = BasePage.driver.FindElement(By.CssSelector("#maincontent > div.page-title-wrapper > h1 > span")).Text;
-            //Assert.AreEqual(assertion_txt, expectedConfirmationText);
-            Assert.AreEqual(assertion_txt, "Thank you for your purchase!");
+            var testData = XmlHelper.ReadXmlData("TestData.xml", "Valid_Order_Placement_Test_Case");
 
+            foreach (var item in testData)
+            {
+                string productUrl = item["ProductUrl"];
+                string expectedConfirmationText = item["ExpectedConfirmationText"];
+
+                // Add product to cart
+                product.Add_to_Cart(productUrl);
+
+                // Proceed to checkout
+                checkout.checkout();
+
+                // Assert confirmation message
+                string assertion_txt = BasePage.driver.FindElement(By.CssSelector("#maincontent > div.page-title-wrapper > h1 > span")).Text;
+                Assert.AreEqual(assertion_txt, expectedConfirmationText);
+            }
         }
+
 
         [TestMethod]
         [TestCategory("FlowTest")]
-        // [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "|DataDirectory|\\Data.xml", "Valid_Update_Cart_Test_Case", DataAccessMethod.Sequential)]
         public void Valid_Update_Cart()
         {
-            By piece_price_txt = By.XPath("/html/body/div[2]/main/div[3]/div/div[2]/form/div[1]/table/tbody/tr[1]/td[2]/span/span/span");
-            By total_price_txt = By.XPath("/html/body/div[2]/main/div[3]/div/div[2]/form/div[1]/table/tbody/tr[1]/td[4]/span/span/span");
-            By checkout_btn = By.XPath("/html/body/div[2]/main/div[3]/div/div[2]/div[1]/ul/li[1]/button");
+            var testData = XmlHelper.ReadXmlData("TestData.xml", "Valid_Update_Cart_Test_Case");
 
-            //string productUrl = TestContext.DataRow["productUrl"].ToString();
-            //int quantity = int.Parse(TestContext.DataRow["quantity"].ToString());
-            //product.Add_to_Cart(productUrl);
-            int quantity = 3;
-            product.Add_to_Cart("https://magento.softwaretestingboard.com/");
-            cart.UpdateCart(quantity);
-            string initial_price = BasePage.driver.FindElement(piece_price_txt).Text;
-            initial_price = initial_price.Substring(1, initial_price.Length - 4);
-            string updated_price = BasePage.driver.FindElement(total_price_txt).Text;
-            updated_price = updated_price.Substring(1, updated_price.Length - 4);
-            Assert.AreEqual(updated_price, (Int32.Parse(initial_price)*quantity).ToString());
+            foreach (var item in testData)
+            {
+                string productUrl = item["ProductUrl"];
+                int quantity = int.Parse(item["Quantity"]);
 
-        }   
+                By piece_price_txt = By.XPath("/html/body/div[2]/main/div[3]/div/div[2]/form/div[1]/table/tbody/tr[1]/td[2]/span/span/span");
+                By total_price_txt = By.XPath("/html/body/div[2]/main/div[3]/div/div[2]/form/div[1]/table/tbody/tr[1]/td[4]/span/span/span");
+
+                // Add product to cart
+                product.Add_to_Cart(productUrl);
+
+                // Update cart with the specified quantity
+                cart.UpdateCart(quantity);
+
+                // Verify the price
+                string initial_price = BasePage.driver.FindElement(piece_price_txt).Text;
+                initial_price = initial_price.Substring(1, initial_price.Length - 4);
+                string updated_price = BasePage.driver.FindElement(total_price_txt).Text;
+                updated_price = updated_price.Substring(1, updated_price.Length - 4);
+                Assert.AreEqual(updated_price, (Int32.Parse(initial_price) * quantity).ToString());
+            }
+        }
+
         [TestMethod]
         [TestCategory("FlowTest")]
-        //[DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "|DataDirectory|\\Data.xml", "Valid_Compare_Products_Test_Case", DataAccessMethod.Sequential)]
-        public void Valid_Compare_products()
+        public void Valid_Compare_Products()
         {
-            By product1_name_comparepage = By.XPath("/html/body/div[2]/main/div[3]/div/div[2]/table/tbody[1]/tr/td[1]/strong/a");
-            By product2_name_comparepage = By.XPath("/html/body/div[2]/main/div[3]/div/div[2]/table/tbody[1]/tr/td[2]/strong/a");
+            var testData = XmlHelper.ReadXmlData("TestData.xml", "Valid_Compare_Products_Test_Case");
 
-            //string ProductName_1 = TestContext.DataRow["ProductName1"].ToString();
-            //string ProductName_2 = TestContext.DataRow["ProductName2"].ToString();
-            //string url = TestContext.DataRow["url"].ToString();
-            //string email = TestContext.DataRow["email"].ToString();
-            //string password = TestContext.DataRow["password"].ToString();
+            foreach (var item in testData)
+            {
+                string productName1 = item["ProductName1"];
+                string productName2 = item["ProductName2"];
+                string email = item["Email"];
+                string password = item["Password"];
 
-            string ProductName_1 = "Proteus Fitness Jackshirt";
-            string ProductName_2 = "Argus All-Weather Tank";
-            
-            //login.Login(url, email, password);
-            login.Login(BasePage.baseUrl,BasePage.emailToUse, "Na1matKhan");
-            product.Compare_Products(ProductName_1, ProductName_2);
+                By product1_name_comparepage = By.XPath("/html/body/div[2]/main/div[3]/div/div[2]/table/tbody[1]/tr/td[1]/strong/a");
+                By product2_name_comparepage = By.XPath("/html/body/div[2]/main/div[3]/div/div[2]/table/tbody[1]/tr/td[2]/strong/a");
 
-            string retrieved_product1_name = BasePage.driver.FindElement(product1_name_comparepage).Text;
-            string retrieved_product2_name = BasePage.driver.FindElement(product2_name_comparepage).Text;
-            Assert.AreEqual(ProductName_1, retrieved_product1_name);
-            Assert.AreEqual(ProductName_2, retrieved_product2_name);
+                // Login with the provided credentials
+                login.Login(BasePage.baseUrl, email, password);
+
+                // Compare the two products
+                product.Compare_Products(productName1, productName2);
+
+                // Verify that the product names match
+                string retrieved_product1_name = BasePage.driver.FindElement(product1_name_comparepage).Text;
+                string retrieved_product2_name = BasePage.driver.FindElement(product2_name_comparepage).Text;
+                Assert.AreEqual(productName1, retrieved_product1_name);
+                Assert.AreEqual(productName2, retrieved_product2_name);
+            }
         }
+
+
         #endregion
     }
 }

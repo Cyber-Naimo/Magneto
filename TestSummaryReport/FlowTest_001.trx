@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="5433aa21-1ce5-4a80-bc73-24d3db7618fc" name="Hashmat@DESKTOP-R2P4LJE 2024-12-02 20:14:39" runUser="DESKTOP-R2P4LJE\Hashmat" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2024-12-02T20:14:39.0198001+05:00" queuing="2024-12-02T20:14:39.0198001+05:00" start="2024-12-02T20:14:23.0336629+05:00" finish="2024-12-02T20:20:24.4356243+05:00" />
+  <TestSettings name="default" id="9d2d732b-0245-4bf8-a081-a3a2f0b2fa93">
+    <Deployment runDeploymentRoot="Hashmat_DESKTOP-R2P4LJE_2024-12-02_20_14_39" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="bf0c674b-343c-4ad0-8095-c08369a404aa" testId="4fe84884-aa53-3f37-5036-8eaa9afea093" testName="Valid_Login_Test_Case" computerName="DESKTOP-R2P4LJE" duration="00:00:26.5587236" startTime="2024-12-02T20:14:39.0148078+05:00" endTime="2024-12-02T20:15:05.5738975+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bf0c674b-343c-4ad0-8095-c08369a404aa" />
+    <UnitTestResult executionId="de5d27fb-03d0-4a8d-a005-843c11bbef6d" testId="f92dbe7e-31d9-92ed-2b13-60487a2c545b" testName="Valid_Compare_Products" computerName="DESKTOP-R2P4LJE" duration="00:00:57.3086867" startTime="2024-12-02T20:19:17.0064512+05:00" endTime="2024-12-02T20:20:22.8559789+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="de5d27fb-03d0-4a8d-a005-843c11bbef6d" />
+    <UnitTestResult executionId="19b1bb43-6e5c-4b72-a6a7-70612e8d2d7b" testId="a0839f3d-35a5-65e4-530a-8b40e0872202" testName="Forget_Password_Test_Case" computerName="DESKTOP-R2P4LJE" duration="00:00:24.0389840" startTime="2024-12-02T20:15:05.5738975+05:00" endTime="2024-12-02T20:15:29.6133915+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="19b1bb43-6e5c-4b72-a6a7-70612e8d2d7b" />
+    <UnitTestResult executionId="7a8839d1-22f4-4080-a635-ee516c9a6e12" testId="cd6fb2b6-fccf-0e89-82af-a5e7c479e10c" testName="Valid_Update_Cart" computerName="DESKTOP-R2P4LJE" duration="00:00:53.0120613" startTime="2024-12-02T20:18:23.9938154+05:00" endTime="2024-12-02T20:19:17.0053691+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7a8839d1-22f4-4080-a635-ee516c9a6e12">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Magento.ExecutionPage.Valid_Update_Cart threw exception: &#xD;
+OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/main/div[3]/div/div[2]/form/div[1]/table/tbody/tr[1]/td[3]/div/div/label/input"}
+  (Session info: chrome=131.0.6778.86); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception</Message>
+          <StackTrace>    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)&#xD;
+   at OpenQA.Selenium.WebDriver.&lt;ExecuteAsync&gt;d__63.MoveNext()&#xD;
+--- End of stack trace from previous location where exception was thrown ---&#xD;
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)&#xD;
+   at Magento.Magento.CartPage.UpdateCart(Int32 quantity) in C:\Users\Hashmat\source\repos\Magento\Magento\Magento\CartPage.cs:line 33&#xD;
+   at Magento.ExecutionPage.Valid_Update_Cart() in C:\Users\Hashmat\source\repos\Magento\Magento\ExecutionPage.cs:line 300&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2a085d75-2fa7-4fb0-ace1-00cacc1c4f99" testId="e467c670-2bfd-616a-a490-c7ed100410b2" testName="Valid_Order_Placement" computerName="DESKTOP-R2P4LJE" duration="00:01:23.0758456" startTime="2024-12-02T20:17:00.9169689+05:00" endTime="2024-12-02T20:18:23.9934225+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2a085d75-2fa7-4fb0-ace1-00cacc1c4f99" />
+    <UnitTestResult executionId="f996a57f-8c08-477a-ba87-7de4d4982fb3" testId="46bb7ad6-8925-5a1f-ade8-343a48ddc5df" testName="ValidRegisterTestCase" computerName="DESKTOP-R2P4LJE" duration="00:00:15.0526017" startTime="2024-12-02T20:14:23.6145410+05:00" endTime="2024-12-02T20:14:38.9918585+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f996a57f-8c08-477a-ba87-7de4d4982fb3">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;Create New Customer Account&gt;. Actual:&lt;My Account&gt;. </Message>
+          <StackTrace>   at Magento.ExecutionPage.ValidRegisterTestCase() in C:\Users\Hashmat\source\repos\Magento\Magento\ExecutionPage.cs:line 98&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f37f525b-027d-4b49-bd96-ccc80e9746b9" testId="358e7f92-9e51-b932-d1b0-9557d28f6117" testName="TestViewAllOrders" computerName="DESKTOP-R2P4LJE" duration="00:00:35.1127909" startTime="2024-12-02T20:15:59.4779184+05:00" endTime="2024-12-02T20:16:34.5911981+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f37f525b-027d-4b49-bd96-ccc80e9746b9" />
+    <UnitTestResult executionId="9be5aa50-e51a-4ff6-9654-5d9c0492ee38" testId="4a302077-fc5b-ae0a-55fe-471133557d50" testName="UpdatePassword" computerName="DESKTOP-R2P4LJE" duration="00:00:29.8631882" startTime="2024-12-02T20:15:29.6133915+05:00" endTime="2024-12-02T20:15:59.4769349+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9be5aa50-e51a-4ff6-9654-5d9c0492ee38">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Magento.ExecutionPage.UpdatePassword threw exception: &#xD;
+OpenQA.Selenium.WebDriverTimeoutException: Timed out after 10 seconds ---&gt; OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".logged\-in"}
+  (Session info: chrome=131.0.6778.86); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception</Message>
+          <StackTrace>    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)&#xD;
+   at OpenQA.Selenium.WebDriver.&lt;ExecuteAsync&gt;d__63.MoveNext()&#xD;
+--- End of stack trace from previous location where exception was thrown ---&#xD;
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)&#xD;
+   at Magento.ExecutionPage.&lt;&gt;c.&lt;UpdatePassword&gt;b__20_0(IWebDriver driver) in C:\Users\Hashmat\source\repos\Magento\Magento\ExecutionPage.cs:line 180&#xD;
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)&#xD;
+--- End of inner exception stack trace ---&#xD;
+    at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)&#xD;
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)&#xD;
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)&#xD;
+   at Magento.ExecutionPage.UpdatePassword() in C:\Users\Hashmat\source\repos\Magento\Magento\ExecutionPage.cs:line 180&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e1bb9b87-52a7-40f9-8ebc-2129d2bf2f54" testId="dea0ff67-c341-05fc-fa8f-800a68e6c24b" testName="AddItemtoCartfromWishListPage" computerName="DESKTOP-R2P4LJE" duration="00:00:26.3255541" startTime="2024-12-02T20:16:34.5911981+05:00" endTime="2024-12-02T20:17:00.9169689+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e1bb9b87-52a7-40f9-8ebc-2129d2bf2f54">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Magento.ExecutionPage.AddItemtoCartfromWishListPage threw exception: &#xD;
+OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".block-wishlist .empty"}
+  (Session info: chrome=131.0.6778.86); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception</Message>
+          <StackTrace>    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)&#xD;
+   at OpenQA.Selenium.WebDriver.&lt;ExecuteAsync&gt;d__63.MoveNext()&#xD;
+--- End of stack trace from previous location where exception was thrown ---&#xD;
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)&#xD;
+   at Magento.Magento.MyWishlistPage.IsWishlistEmpty() in C:\Users\Hashmat\source\repos\Magento\Magento\Magento\MyWishlistPage.cs:line 55&#xD;
+   at Magento.ExecutionPage.AddItemtoCartfromWishListPage() in C:\Users\Hashmat\source\repos\Magento\Magento\ExecutionPage.cs:line 250&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="Valid_Login_Test_Case" storage="c:\users\hashmat\source\repos\magento\magento\bin\debug\magento.dll" id="4fe84884-aa53-3f37-5036-8eaa9afea093">
+      <TestCategory>
+        <TestCategoryItem TestCategory="FlowTest" />
+      </TestCategory>
+      <Execution id="bf0c674b-343c-4ad0-8095-c08369a404aa" />
+      <TestMethod codeBase="C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Magento.dll" adapterTypeName="executor://mstestadapter/v2" className="Magento.ExecutionPage" name="Valid_Login_Test_Case" />
+    </UnitTest>
+    <UnitTest name="Valid_Compare_Products" storage="c:\users\hashmat\source\repos\magento\magento\bin\debug\magento.dll" id="f92dbe7e-31d9-92ed-2b13-60487a2c545b">
+      <TestCategory>
+        <TestCategoryItem TestCategory="FlowTest" />
+      </TestCategory>
+      <Execution id="de5d27fb-03d0-4a8d-a005-843c11bbef6d" />
+      <TestMethod codeBase="C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Magento.dll" adapterTypeName="executor://mstestadapter/v2" className="Magento.ExecutionPage" name="Valid_Compare_Products" />
+    </UnitTest>
+    <UnitTest name="UpdatePassword" storage="c:\users\hashmat\source\repos\magento\magento\bin\debug\magento.dll" id="4a302077-fc5b-ae0a-55fe-471133557d50">
+      <TestCategory>
+        <TestCategoryItem TestCategory="FlowTest" />
+      </TestCategory>
+      <Execution id="9be5aa50-e51a-4ff6-9654-5d9c0492ee38" />
+      <TestMethod codeBase="C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Magento.dll" adapterTypeName="executor://mstestadapter/v2" className="Magento.ExecutionPage" name="UpdatePassword" />
+    </UnitTest>
+    <UnitTest name="TestViewAllOrders" storage="c:\users\hashmat\source\repos\magento\magento\bin\debug\magento.dll" id="358e7f92-9e51-b932-d1b0-9557d28f6117">
+      <TestCategory>
+        <TestCategoryItem TestCategory="FlowTest" />
+      </TestCategory>
+      <Execution id="f37f525b-027d-4b49-bd96-ccc80e9746b9" />
+      <TestMethod codeBase="C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Magento.dll" adapterTypeName="executor://mstestadapter/v2" className="Magento.ExecutionPage" name="TestViewAllOrders" />
+    </UnitTest>
+    <UnitTest name="Forget_Password_Test_Case" storage="c:\users\hashmat\source\repos\magento\magento\bin\debug\magento.dll" id="a0839f3d-35a5-65e4-530a-8b40e0872202">
+      <TestCategory>
+        <TestCategoryItem TestCategory="FlowTest" />
+      </TestCategory>
+      <Execution id="19b1bb43-6e5c-4b72-a6a7-70612e8d2d7b" />
+      <TestMethod codeBase="C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Magento.dll" adapterTypeName="executor://mstestadapter/v2" className="Magento.ExecutionPage" name="Forget_Password_Test_Case" />
+    </UnitTest>
+    <UnitTest name="Valid_Order_Placement" storage="c:\users\hashmat\source\repos\magento\magento\bin\debug\magento.dll" id="e467c670-2bfd-616a-a490-c7ed100410b2">
+      <TestCategory>
+        <TestCategoryItem TestCategory="FlowTest" />
+      </TestCategory>
+      <Execution id="2a085d75-2fa7-4fb0-ace1-00cacc1c4f99" />
+      <TestMethod codeBase="C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Magento.dll" adapterTypeName="executor://mstestadapter/v2" className="Magento.ExecutionPage" name="Valid_Order_Placement" />
+    </UnitTest>
+    <UnitTest name="ValidRegisterTestCase" storage="c:\users\hashmat\source\repos\magento\magento\bin\debug\magento.dll" id="46bb7ad6-8925-5a1f-ade8-343a48ddc5df">
+      <TestCategory>
+        <TestCategoryItem TestCategory="FlowTest" />
+      </TestCategory>
+      <Execution id="f996a57f-8c08-477a-ba87-7de4d4982fb3" />
+      <TestMethod codeBase="C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Magento.dll" adapterTypeName="executor://mstestadapter/v2" className="Magento.ExecutionPage" name="ValidRegisterTestCase" />
+    </UnitTest>
+    <UnitTest name="AddItemtoCartfromWishListPage" storage="c:\users\hashmat\source\repos\magento\magento\bin\debug\magento.dll" id="dea0ff67-c341-05fc-fa8f-800a68e6c24b">
+      <TestCategory>
+        <TestCategoryItem TestCategory="FlowTest" />
+      </TestCategory>
+      <Execution id="e1bb9b87-52a7-40f9-8ebc-2129d2bf2f54" />
+      <TestMethod codeBase="C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Magento.dll" adapterTypeName="executor://mstestadapter/v2" className="Magento.ExecutionPage" name="AddItemtoCartfromWishListPage" />
+    </UnitTest>
+    <UnitTest name="Valid_Update_Cart" storage="c:\users\hashmat\source\repos\magento\magento\bin\debug\magento.dll" id="cd6fb2b6-fccf-0e89-82af-a5e7c479e10c">
+      <TestCategory>
+        <TestCategoryItem TestCategory="FlowTest" />
+      </TestCategory>
+      <Execution id="7a8839d1-22f4-4080-a635-ee516c9a6e12" />
+      <TestMethod codeBase="C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Magento.dll" adapterTypeName="executor://mstestadapter/v2" className="Magento.ExecutionPage" name="Valid_Update_Cart" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="4fe84884-aa53-3f37-5036-8eaa9afea093" executionId="bf0c674b-343c-4ad0-8095-c08369a404aa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f92dbe7e-31d9-92ed-2b13-60487a2c545b" executionId="de5d27fb-03d0-4a8d-a005-843c11bbef6d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a0839f3d-35a5-65e4-530a-8b40e0872202" executionId="19b1bb43-6e5c-4b72-a6a7-70612e8d2d7b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cd6fb2b6-fccf-0e89-82af-a5e7c479e10c" executionId="7a8839d1-22f4-4080-a635-ee516c9a6e12" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e467c670-2bfd-616a-a490-c7ed100410b2" executionId="2a085d75-2fa7-4fb0-ace1-00cacc1c4f99" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="46bb7ad6-8925-5a1f-ade8-343a48ddc5df" executionId="f996a57f-8c08-477a-ba87-7de4d4982fb3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="358e7f92-9e51-b932-d1b0-9557d28f6117" executionId="f37f525b-027d-4b49-bd96-ccc80e9746b9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4a302077-fc5b-ae0a-55fe-471133557d50" executionId="9be5aa50-e51a-4ff6-9654-5d9c0492ee38" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dea0ff67-c341-05fc-fa8f-800a68e6c24b" executionId="e1bb9b87-52a7-40f9-8ebc-2129d2bf2f54" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="9" executed="9" passed="5" failed="4" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>Test Parallelization enabled for C:\Users\Hashmat\source\repos\Magento\Magento\bin\Debug\Magento.dll (Workers: 1, Scope: MethodLevel)&#xD;
+[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET Framework 4.8.9282.0)&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

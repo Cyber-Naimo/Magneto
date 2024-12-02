@@ -15,7 +15,7 @@ namespace Magento.Magento
 
         // My Wishlist
         By myWishListLink = By.LinkText("My Wish List");
-        By wishlistEmptyMessage = By.CssSelector(".block-wishlist .empty");
+        By wishlistEmptyMessage = By.CssSelector(".block-wishlist.empty");
 
         // AddAllItemtoCart
         By addtocart_tag = By.XPath("//button[@title='Add All to Cart']");
