@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TestData>
+	<Valid_Login_Test_Case>
+		<TestCase>
+			<BaseUrl>https://magento.softwaretestingboard.com</BaseUrl>
+			<Email>leaf-atomic@6murhqca.mailosaur.net</Email>
+			<Password>Na1matKhan</Password>
+			<ExpectedText>Welcome, naimat naimat!</ExpectedText>
+		</TestCase>
+	</Valid_Login_Test_Case>
+	<Forget_Password_Test_Case>
+		<TestCase>
+			<BaseUrl>https://magento.softwaretestingboard.com</BaseUrl>
+			<Email>leaf-atomic@6murhqca.mailosaur.net</Email>
+			<ExpectedMessage>You updated your password.</ExpectedMessage>
+		</TestCase>
+	</Forget_Password_Test_Case>
+</TestData>

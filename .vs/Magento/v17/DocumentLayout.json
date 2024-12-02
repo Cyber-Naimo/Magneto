@@ -1,10 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Hashmat\\source\\repos\\Magento\\",
+  "WorkspaceRootPath": "E:\\University\\sem7\\Software Testing\\project\\Magneto\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|c:\\users\\hashmat\\source\\repos\\magento\\magento\\basepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|e:\\university\\sem7\\software testing\\project\\magneto\\magento\\executionpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|solutionrelative:magento\\executionpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|E:\\University\\sem7\\Software Testing\\project\\Magneto\\magento\\basepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|solutionrelative:magento\\basepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|e:\\university\\sem7\\software testing\\project\\magneto\\magento\\testdata.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|solutionrelative:magento\\testdata.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|e:\\university\\sem7\\software testing\\project\\magneto\\magento\\xmlhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|solutionrelative:magento\\xmlhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|E:\\University\\sem7\\Software Testing\\project\\Magneto\\magento\\magento\\forgetpasswordpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|solutionrelative:magento\\magento\\forgetpasswordpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|E:\\University\\sem7\\Software Testing\\project\\Magneto\\magento\\magento\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B1FFC2-B030-4C56-A30F-ECE448A205FF}|Magento\\Magento.csproj|solutionrelative:magento\\magento\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,21 +34,85 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TestData.xml",
+              "DocumentMoniker": "E:\\University\\sem7\\Software Testing\\project\\Magneto\\Magento\\TestData.xml",
+              "RelativeDocumentMoniker": "Magento\\TestData.xml",
+              "ToolTip": "E:\\University\\sem7\\Software Testing\\project\\Magneto\\Magento\\TestData.xml",
+              "RelativeToolTip": "Magento\\TestData.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-12-01T19:28:34.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "XmlHelper.cs",
+              "DocumentMoniker": "E:\\University\\sem7\\Software Testing\\project\\Magneto\\Magento\\XmlHelper.cs",
+              "RelativeDocumentMoniker": "Magento\\XmlHelper.cs",
+              "ToolTip": "E:\\University\\sem7\\Software Testing\\project\\Magneto\\Magento\\XmlHelper.cs",
+              "RelativeToolTip": "Magento\\XmlHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAwB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T19:24:20.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ExecutionPage.cs",
+              "DocumentMoniker": "E:\\University\\sem7\\Software Testing\\project\\Magneto\\Magento\\ExecutionPage.cs",
+              "RelativeDocumentMoniker": "Magento\\ExecutionPage.cs",
+              "ToolTip": "E:\\University\\sem7\\Software Testing\\project\\Magneto\\Magento\\ExecutionPage.cs",
+              "RelativeToolTip": "Magento\\ExecutionPage.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAmwIMAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T18:06:08.447Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "ForgetPasswordPage.cs",
+              "DocumentMoniker": "E:\\University\\sem7\\Software Testing\\project\\Magneto\\Magento\\Magento\\ForgetPasswordPage.cs",
+              "RelativeDocumentMoniker": "Magento\\Magento\\ForgetPasswordPage.cs",
+              "ToolTip": "E:\\University\\sem7\\Software Testing\\project\\Magneto\\Magento\\Magento\\ForgetPasswordPage.cs",
+              "RelativeToolTip": "Magento\\Magento\\ForgetPasswordPage.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwA8AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T18:57:16.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginPage.cs",
+              "DocumentMoniker": "E:\\University\\sem7\\Software Testing\\project\\Magneto\\Magento\\Magento\\LoginPage.cs",
+              "RelativeDocumentMoniker": "Magento\\Magento\\LoginPage.cs",
+              "ToolTip": "E:\\University\\sem7\\Software Testing\\project\\Magneto\\Magento\\Magento\\LoginPage.cs",
+              "RelativeToolTip": "Magento\\Magento\\LoginPage.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAwwCcAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T18:47:47.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "BasePage.cs",
-              "DocumentMoniker": "C:\\Users\\Hashmat\\source\\repos\\Magento\\Magento\\BasePage.cs",
+              "DocumentMoniker": "E:\\University\\sem7\\Software Testing\\project\\Magneto\\Magento\\BasePage.cs",
               "RelativeDocumentMoniker": "Magento\\BasePage.cs",
-              "ToolTip": "C:\\Users\\Hashmat\\source\\repos\\Magento\\Magento\\BasePage.cs",
+              "ToolTip": "E:\\University\\sem7\\Software Testing\\project\\Magneto\\Magento\\BasePage.cs",
               "RelativeToolTip": "Magento\\BasePage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAmwGoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-01T12:33:29.269Z",
               "EditorCaption": ""

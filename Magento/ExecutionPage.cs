@@ -8,6 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Mailosaur;
+using Mailosaur.Models;
+using OpenQA.Selenium.Support.UI;
 
 namespace Magento
 {
@@ -25,7 +28,7 @@ namespace Magento
         [AssemblyInitialize()]
         public static void AssemblyInitialize(TestContext context)
         {
-            string resultFile = @"C:\Users\Hashmat\source\repos\Magento\ExtentReports\Execution_log_" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".html";
+            string resultFile = @"E:\University\sem7\Software Testing\project\Magneto\ExtentReports\Execution_log_" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".html";
             BasePage.CreateReport(resultFile);
         }
 
@@ -52,6 +55,7 @@ namespace Magento
 
         LoginPage login = new LoginPage();
         RegisterPage register = new RegisterPage();
+        ForgetPasswordPage forgetPassword = new ForgetPasswordPage();
         ProductPage product = new ProductPage();
         CartPage cart = new CartPage();
         CheckoutPage checkout = new CheckoutPage();
@@ -86,18 +90,58 @@ namespace Magento
 
         // Login Page
         [TestMethod]
-       // [TestCategory("FlowTest")]
-        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML","Data.xml", "Valid_Login_Test_Case",DataAccessMethod.Sequential)]
         public void Valid_Login_Test_Case()
         {
-            string url = TestContext.DataRow["url"].ToString();
-            string email = TestContext.DataRow["email"].ToString();
-            string password = TestContext.DataRow["password"].ToString();
-            login.Login(url, email, password);
-            //login.Login(BasePage.baseUrl, BasePage.emailToUse, "Na1matKhan");
-            Thread.Sleep(1000);
-           string result = BasePage.driver.FindElement(By.ClassName("logged-in")).Text;
-           Assert.AreEqual(result, "Welcome, naimat naimat!");
+            var testData = XmlHelper.ReadXmlData("TestData.xml", "Valid_Login_Test_Case");
+            
+            foreach (var item in testData)
+            {
+                string url = item["BaseUrl"];
+                string email = item["Email"];
+                string password = item["Password"];
+                login.Login(url, email, password);
+                WebDriverWait wait = new WebDriverWait(BasePage.driver, TimeSpan.FromSeconds(10));
+                IWebElement passwordReset = wait.Until(driver => driver.FindElement(By.ClassName("logged-in")));
+                string result = passwordReset.Text;
+                Assert.AreEqual(result, item["ExpectedText"]);
+            }
+        }
+
+        [TestMethod]
+
+        public void Forget_Password_Test_Case()
+        {
+            var testData = XmlHelper.ReadXmlData("TestData.xml", "Forget_Password_Test_Case");
+
+            foreach (var item in testData)
+            {
+                string url = item["BaseUrl"];
+                string mail = item["Email"];
+                string password = item["Password"];
+                string apiKey = item["ApiKey"];
+                string serverId = item["ServerId"];
+
+                login.ForgotPass(url);
+                forgetPassword.SubmitForgotPassword(mail);
+
+                var mailosaur = new MailosaurClient(apiKey);
+
+                // Wait for an email to arrive, matching this search criteria
+                var criteria = new SearchCriteria()
+                {
+                    SentTo = mail
+                };
+                var email = mailosaur.Messages.Get(serverId, criteria);
+                var resetLink = email.Html.Links[1].Href;
+
+                forgetPassword.Reset(resetLink, password, password);
+
+                WebDriverWait wait = new WebDriverWait(BasePage.driver, TimeSpan.FromSeconds(10));
+                IWebElement passwordReset = wait.Until(driver => driver.FindElement(By.XPath("//*[@id=\"maincontent\"]/div[2]/div[2]/div/div/div")));
+                string result = passwordReset.Text;
+
+                Assert.AreEqual(result, item["ExpectedMessage"]);
+            }
         }
 
 
