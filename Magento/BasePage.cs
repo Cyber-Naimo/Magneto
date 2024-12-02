@@ -95,7 +95,7 @@ namespace Magento
 
         public static void TakeScreenshots(Status status,string stepDetails)
         {
-            string path = @"C:\Users\Hashmat\source\repos\Magento\ExtentReports\images\" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".jpg";
+            string path = @"C:\Users\Hashmat\source\repos\Magento\ExtentReports\images" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".jpg";
             Screenshot screenshot = ((ITakesScreenshot)driver).GetScreenshot();
             System.IO.File.WriteAllBytes(path, screenshot.AsByteArray);
             Step.Log(status,stepDetails,MediaEntityBuilder.CreateScreenCaptureFromPath(path).Build());
