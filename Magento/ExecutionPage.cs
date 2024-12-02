@@ -58,10 +58,19 @@ namespace Magento
         MyAccountPage account = new MyAccountPage();
         MyOrdersPage orders = new MyOrdersPage();
         MyWishlistPage wishlists = new MyWishlistPage();
+        ForgetPasswordPage forgetPassword = new ForgetPasswordPage();
 
         #endregion
 
         #region Methods
+
+        [TestMethod]
+        public void GotoForgotPass()
+        {
+            login.ForgotPass(BasePage.baseUrl);
+        }
+
+
 
         // RegisterPage
         [TestMethod]
