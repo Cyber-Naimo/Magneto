@@ -52,7 +52,9 @@ Future work includes integrating advanced testing techniques and expanding the t
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/magento-testing-project.git
+   git clone https://github.com/Cyber-Naimo/Magneto.git
+   cd Magento
+   run Magento.sln in Visual Studio 2022
    ```
 2. Run test scripts using Selenium WebDriver on Visual Studio 2022.
 
